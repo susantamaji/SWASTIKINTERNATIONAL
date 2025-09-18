@@ -183,8 +183,8 @@ function Index() {
                 <div className="absolute bg-[#094B72] bg-opacity-70" />
 
                 {/* Content */}
-                <div className="relative z-10 px-4 md:px-8 text-gray-300 max-w-3xl">
-                    <p className="text-sm md:text-base tracking-widest uppercase">
+                <div className="relative z-10 px-4 md:px-8 text-yellow-300 max-w-3xl">
+                    <p className="text-xl md:text-base tracking-widest uppercase font-bold">
                         We Export &amp; Import
                     </p>
                     <h1 className="text-2xl md:text-5xl font-bold my-4">
@@ -195,7 +195,7 @@ function Index() {
                     </p>
                     <a
                         href="./contact.html"
-                        className="mt-6 inline-block bg-[#004D7B] hover:bg-[#043049] text-white transition px-6 py-3 rounded-lg font-semibold"
+                        className="mt-6 inline-block bg-[#d5911a] hover:bg-[#b29609] text-white transition px-6 py-3 rounded-lg font-semibold"
                     >
                         Contact With Us
                     </a>
