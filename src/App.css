@@ -1,0 +1,26 @@
+ .carousel-slide {
+            transition: transform 0.5s ease-in-out;
+        }
+
+        @keyframes popUp {
+            0% {
+                opacity: 0;
+                transform: scale(0.8) translateY(30px);
+            }
+
+            100% {
+                opacity: 1;
+                transform: scale(1) translateY(0);
+            }
+        }
+
+        .animate-pop {
+            animation: popUp 0.6s ease-out forwards;
+        }
+        .text{
+            font-family:cursive;
+            /* font: italic small-caps bold 16px/2 cursive; */
+        }
+        .text{
+            font-family: 'Dancing Script', cursive;
+        }
