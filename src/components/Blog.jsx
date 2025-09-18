@@ -179,7 +179,7 @@ function Blog() {
                 <input type="email" placeholder="Email" className="border border-gray-500 rounded-md p-3 w-full" />
               </div>
               <textarea placeholder="Message" rows={5} className="border border-gray-500 rounded-md p-3 w-full" defaultValue={""} />
-              <button type="submit" className="bg-cyan-500 text-white px-6 py-2 rounded-md hover:bg-cyan-700">Submit</button>
+              <button type="submit" className="bg-yellow-500 text-white px-6 py-2 rounded-md hover:bg-yellow-700">Submit</button>
             </form>
           </div>
         </div>

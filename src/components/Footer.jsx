@@ -7,7 +7,7 @@ function Footer() {
         <div>
             {/* footer--------- */}
             <footer className="bg-[#FFF3E3] text-black py-12  translate-y-10 transition-all duration-700 will-change-transform animate-on-scroll">
-                <div className="container mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div className="container font-semibold mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-8">
                     {/* Logo + Info */}
                     <div>
                         <h2 className="flex items-center text-[18px] font-bold text-[#B88E2F]" >
@@ -32,20 +32,7 @@ function Footer() {
                             </li>
                         </ul>
                         {/* Social Icons */}
-                        <div className="flex gap-3 mt-4">
-                            <a href="#" className="bg-yellow-[#B88E2F] p-2 rounded-full hover:text-yellow-500 transition">
-                                <i className="fab fa-facebook-f" />
-                            </a>
-                            <a href="#" className="bg-yellow-[#B88E2F] p-2 rounded-full hover:text-yellow-500 transition">
-                                <i className="fab fa-linkedin-in" />
-                            </a>
-                            <a href="#" className="bg-yellow-[#B88E2F] p-2 rounded-full hover:text-yellow-500 transition">
-                                <i className="fab fa-instagram" />
-                            </a>
-                            <a href="#" className="bg-yellow-[#B88E2F] p-2 rounded-full hover:text-yellow-500 transition">
-                                <i className="fab fa-twitter" />
-                            </a>
-                        </div>
+
                     </div>
                     {/* Quick Links */}
                     <div>
@@ -79,16 +66,32 @@ function Footer() {
                         <p className="text-sm">Mon to Sat: 09:30 AM - 06:30 PM</p>
                         <p className="text-sm">Sunday: Closed</p>
                         {/* Newsletter */}
-                        <div className="mt-4 flex">
-                            <input type="email" placeholder="Enter your email" className="w-full px-3 py-2 rounded-l bg-yellow-[#B88E2F] text-gray-200 focus:outline-none" />
-                            <button className="bg-cyan-600 px-4 rounded-r hover:bg-cyan-700 transition">
-                                <i className="fas fa-paper-plane text-gray-700" />
+                        {/* <div className="mt-4 flex">
+                            <input type="email" placeholder="Enter your email" className="w-full px-3 py-2 rounded-l bg-yellow-[#329cbf] text-gray-900 focus:outline-none" />
+                            <button className="bg-yellow-600 px-4 rounded-r hover:bg-yellow-700 transition">
+                                <i className="fas fa-paper-plane text-cyan-900" />
                             </button>
+                        </div> */}
+
+                        <div className="flex gap-3 mt-4">
+                            <a href="#" className="bg-yellow-[#B88E2F] p-2 rounded-full hover:text-yellow-500 transition">
+                                <i className="fab fa-facebook-f" />
+                            </a>
+                            <a href="#" className="bg-yellow-[#B88E2F] p-2 rounded-full hover:text-yellow-500 transition">
+                                <i className="fab fa-linkedin-in" />
+                            </a>
+                            <a href="#" className="bg-yellow-[#B88E2F] p-2 rounded-full hover:text-yellow-500 transition">
+                                <i className="fab fa-instagram" />
+                            </a>
+                            <a href="#" className="bg-yellow-[#B88E2F] p-2 rounded-full hover:text-yellow-500 transition">
+                                <i className="fab fa-twitter" />
+                            </a>
                         </div>
+
                     </div>
                 </div>
                 {/* Bottom Bar */}
-                <div className="border-t border-gray-700 mt-10 pt-6 text-center text-xs text-gray-200">
+                <div className="border-t border-gray-700 mt-10 pt-6 text-center text-xs text-gray-800">
                     <p>COPYRIGHT © 2025 <span className="text-yellow-400 hover:text-yellow-500">SWASTIK INTERNATIONAL</span>. ALL
                         RIGHTS RESERVED</p>
                     <p>DESIGNED &amp; DEVELOPED BY: <span className="text-yellow-400 hover:text-yellow-500">LK TECHNOLOGY</span></p>
