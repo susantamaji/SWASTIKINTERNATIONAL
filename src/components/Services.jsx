@@ -2,9 +2,9 @@ import React from 'react'
 import Footer from './Footer'
 import pic from "./Pages/Images/Services-Photos/shipe.jpg"
 
-import pic1 from "./Pages/Images/Blog-images/doc.jpeg"
-import pic2 from "./Pages/Images/Services-Photos/it.jpeg"
-import pic3 from "./Pages/Images/Services-Photos/tea.jpeg"
+import pic1 from "./Pages/Images/Blog-images/medical-equipment-1000x1000.png"
+import pic2 from "./Pages/Images/Services-Photos/it2.png"
+import pic3 from "./Pages/Images/Services-Photos/tea2.webp"
 import pic4 from "./Pages/Images/Services-Photos/bamboo.jpg"
 import pic5 from "./Pages/Images/Services-Photos/gur2.jpeg"
 import pic6 from "./Pages/Images/Services-Photos/Copper.jpg"
@@ -215,8 +215,8 @@ function Services() {
                             {/* Contact */}
                             <div className="pt-4 border-t">
                                 <h4 className="font-semibold text-gray-800 mb-2">📞 Contact Us:</h4>
-                                <p className="flex items-center gap-2"><i className="fas fa-phone-alt text-green-600" /> +91 8240690052</p>
-                                <p className="flex items-center gap-2"><i className="fas fa-envelope text-cyan-600" /> <a href="mailto:swastikintl17@gmail.com" className="hover:underline">swastikintl17@gmail.com</a></p>
+                                <p className="flex items-center gap-2"><i className="fas fa-phone-alt text-green-600" /> +91 9831161331</p>
+                                <p className="flex items-center gap-2"><i className="fas fa-envelope text-cyan-600" /> <a href="mailto:info@swastikintl.com" className="hover:underline">info@swastikintl.com</a></p>
                             </div>
                         </div>
                     </div>
@@ -288,8 +288,8 @@ function Services() {
                                 <p className="text-green-700 font-semibold">Export Ready – Supplying globally with certifications</p>
                                 <div className="mt-4 space-y-2">
                                     <p className="flex items-center justify-center gap-2"><i className="fab fa-whatsapp text-green-600" /> WhatsApp:
-                                        +91 8240690052</p>
-                                    <p className="flex items-center justify-center gap-2"><i className="fas fa-envelope text-cyan-600" /> <a href="mailto:swastikintl17@gmail.com" className="hover:underline">swastikintl17@gmail.com</a></p>
+                                        +91 9831161331</p>
+                                    <p className="flex items-center justify-center gap-2"><i className="fas fa-envelope text-cyan-600" /> <a href="mailto:info@swastikintl.com" className="hover:underline">info@swastikintl.com</a></p>
                                 </div>
                             </div>
                         </div>

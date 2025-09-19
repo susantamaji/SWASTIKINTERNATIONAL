@@ -9,7 +9,7 @@ import pic5 from "./Pages/Images/indexPhoto/it.jpg"
 import pic6 from "./Pages/Images/indexPhoto/tea.jpg"
 import pic7 from "./Pages/Images/indexPhoto/ship.jpeg"
 import pic8 from "./Pages/Images/indexPhoto/handshak.jpeg"
-import pic9 from "./Pages/Images/indexPhoto/flight.jpeg"
+import pic9 from "./Pages/Images/indexPhoto/form.jpeg"
 import { NavLink } from "react-router-dom";
 
 

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Navbar from './Navbar'
 import Footer from './Footer'
 import pic from "./Pages/Images/About-Images/banner2.png"
@@ -13,8 +13,16 @@ import pic12 from "./Pages/Images/About-Images/Surgical Gloves.jpg"
 import pic13 from "./Pages/Images/About-Images/Examination Gloves.jpg"
 import pic14 from "./Pages/Images/About-Images/Eye Mask.jpg"
 import { NavLink } from 'react-router-dom'
+import { ChevronDown, ChevronUp, FlaskConical, Pill, Bandage } from "lucide-react";
 
 function Products() {
+
+  const [openSection, setOpenSection] = useState(null);
+
+  const toggleSection = (section) => {
+    setOpenSection(openSection === section ? null : section);
+  };
+
   return (
     <div className='pt-20'>
       {/* <Navbar /> */}
@@ -28,7 +36,7 @@ function Products() {
             <h2 className="text-3xl font-bold">OUR PRODUCTS</h2>
             <p className="mt-2">
               <NavLink to={"/"}><a><span className="text-cyan-500 font-semibold cursor-pointer">Home</span></a></NavLink>
-             <NavLink to={"/blog"}> <a href="./singal_blog.html"><span className="text-gray-300 cursor-pointer"> / Blog</span></a></NavLink>
+              <NavLink to={"/blog"}> <a href="./singal_blog.html"><span className="text-gray-300 cursor-pointer"> / Blog</span></a></NavLink>
             </p>
           </div>
           {/* Right Text */}
@@ -43,58 +51,91 @@ function Products() {
         </div>
       </section>
 
-        {/* OUR PRODUCTS------------ */}
-
+      {/* OUR PRODUCTS------------ */}
       <section className="py-12 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-6">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
           {/* Generic Medicines */}
-          <h2 className="text-2xl md:text-3xl font-bold text-center text-white bg-gradient-to-r from-sky-500 to-sky-600 py-2 rounded mb-8">
-            Generic Medicines
-          </h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mb-12">
-            <div className="bg-white rounded-lg shadow hover:shadow-xl hover:scale-105 transition">
-              <img src={pic7} alt="Medicine 1" className="w-full h-48 object-contain p-4" />
-            </div>
-            <div className="bg-white rounded-lg shadow hover:shadow-xl hover:scale-105 transition">
-              <img src={pic14} alt="Medicine 2" className="w-full h-48 object-contain p-4" />
-            </div>
-            <div className="bg-white rounded-lg shadow hover:shadow-xl hover:scale-105 transition">
-              <img src={pic13} alt="Medicine 3" className="w-full h-48 object-contain p-4" />
-            </div>
+          <div className="mb-6">
+            <button
+              onClick={() => toggleSection("generic")}
+              className="w-full flex justify-between items-center bg-gradient-to-r from-sky-500 to-sky-600 text-white py-3 px-4 rounded-lg shadow-md font-bold text-lg sm:text-2xl hover:opacity-90 transition cursor-pointer"
+            >
+              <span className="flex items-center gap-2">
+                <Pill className="w-6 h-6" /> Generic Medicines
+              </span>
+              {openSection === "generic" ? <ChevronUp /> : <ChevronDown />}
+            </button>
+            {openSection === "generic" && (
+              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mt-6 animate-fadeIn">
+                <div className="bg-white rounded-lg shadow hover:shadow-xl hover:scale-105 transition">
+                  <img src={pic7} alt="Medicine 1" className="w-full h-48 object-contain p-4" />
+                </div>
+                <div className="bg-white rounded-lg shadow hover:shadow-xl hover:scale-105 transition">
+                  <img src={pic14} alt="Medicine 2" className="w-full h-48 object-contain p-4" />
+                </div>
+                <div className="bg-white rounded-lg shadow hover:shadow-xl hover:scale-105 transition">
+                  <img src={pic13} alt="Medicine 3" className="w-full h-48 object-contain p-4" />
+                </div>
+              </div>
+            )}
           </div>
+
           {/* Laboratory Chemicals */}
-          <h2 className="text-2xl md:text-3xl font-bold text-center text-white bg-gradient-to-r from-sky-500 to-sky-600 py-2 rounded mb-8">
-            Laboratory Chemicals &amp; Equipment
-          </h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mb-12">
-            <div className="bg-white rounded-lg shadow hover:shadow-xl hover:scale-105 transition">
-              <img src={pic12} alt="Lab" className="w-full h-48 object-contain p-4" />
-            </div>
-            <div className="bg-white rounded-lg shadow hover:shadow-xl hover:scale-105 transition">
-              <img src={pic11} alt="Microscope" className="w-full h-48 object-contain p-4" />
-            </div>
-            <div className="bg-white rounded-lg shadow hover:shadow-xl hover:scale-105 transition">
-              <img src={pic8} alt="Tubes" className="w-full h-48 object-contain p-4" />
-            </div>
+          <div className="mb-6">
+            <button
+              onClick={() => toggleSection("lab")}
+              className="w-full flex justify-between items-center bg-gradient-to-r from-green-500 to-green-600 text-white py-3 px-4 rounded-lg shadow-md font-bold text-lg sm:text-2xl hover:opacity-90 transition cursor-pointer"
+            >
+              <span className="flex items-center gap-2">
+                <FlaskConical className="w-6 h-6" /> Laboratory Chemicals & Equipment
+              </span>
+              {openSection === "lab" ? <ChevronUp /> : <ChevronDown />}
+            </button>
+            {openSection === "lab" && (
+              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mt-6 animate-fadeIn">
+                <div className="bg-white rounded-lg shadow hover:shadow-xl hover:scale-105 transition">
+                  <img src={pic12} alt="Lab" className="w-full h-48 object-contain p-4" />
+                </div>
+                <div className="bg-white rounded-lg shadow hover:shadow-xl hover:scale-105 transition">
+                  <img src={pic11} alt="Microscope" className="w-full h-48 object-contain p-4" />
+                </div>
+                <div className="bg-white rounded-lg shadow hover:shadow-xl hover:scale-105 transition">
+                  <img src={pic8} alt="Tubes" className="w-full h-48 object-contain p-4" />
+                </div>
+              </div>
+            )}
           </div>
+
           {/* Orthopaedic Cast */}
-          <h2 className="text-2xl md:text-3xl font-bold text-center text-white bg-gradient-to-r from-sky-500 to-sky-600 py-2 rounded mb-8">
-            Orthopaedic Cast
-          </h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-            <div className="bg-white rounded-lg shadow hover:shadow-xl hover:scale-105 transition p-4 text-center">
-              <img src={pic9} alt="Bandages" className="w-full h-48 object-contain mb-2" />
-              <p className="text-gray-700 font-semibold">Bandages</p>
-            </div>
-            <div className="bg-white rounded-lg shadow hover:shadow-xl hover:scale-105 transition p-4 text-center">
-              <img src={pic10} alt="Crepe Bandages" className="w-full h-48 object-contain mb-2" />
-              <p className="text-gray-700 font-semibold">Crepe Bandages</p>
-            </div>
-            <div className="bg-white rounded-lg shadow hover:shadow-xl hover:scale-105 transition p-4 text-center">
-              <img src={pic6} alt="Bandages" className="w-full h-48 object-contain mb-2" />
-              <p className="text-gray-700 font-semibold">Bandages</p>
-            </div>
+          <div className="mb-6">
+            <button
+              onClick={() => toggleSection("cast")}
+              className="w-full flex justify-between items-center bg-gradient-to-r from-purple-500 to-purple-600 text-white py-3 px-4 rounded-lg shadow-md font-bold text-lg sm:text-2xl hover:opacity-90 transition cursor-pointer"
+            >
+              <span className="flex items-center gap-2">
+                <Bandage className="w-6 h-6" /> Orthopaedic Cast
+              </span>
+              {openSection === "cast" ? <ChevronUp /> : <ChevronDown />}
+            </button>
+            {openSection === "cast" && (
+              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mt-6 animate-fadeIn">
+                <div className="bg-white rounded-lg shadow hover:shadow-xl hover:scale-105 transition p-4 text-center">
+                  <img src={pic9} alt="Bandages" className="w-full h-48 object-contain mb-2" />
+                  <p className="text-gray-700 font-semibold">Bandages</p>
+                </div>
+                <div className="bg-white rounded-lg shadow hover:shadow-xl hover:scale-105 transition p-4 text-center">
+                  <img src={pic10} alt="Crepe Bandages" className="w-full h-48 object-contain mb-2" />
+                  <p className="text-gray-700 font-semibold">Crepe Bandages</p>
+                </div>
+                <div className="bg-white rounded-lg shadow hover:shadow-xl hover:scale-105 transition p-4 text-center">
+                  <img src={pic6} alt="Bandages" className="w-full h-48 object-contain mb-2" />
+                  <p className="text-gray-700 font-semibold">Bandages</p>
+                </div>
+              </div>
+            )}
           </div>
+
         </div>
       </section>
 

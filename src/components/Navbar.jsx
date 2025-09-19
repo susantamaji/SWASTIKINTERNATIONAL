@@ -11,19 +11,20 @@ function Navbar() {
     return (
         <div className="bg-[#fcfcfc] text-cyan-300 h-20 shadow fixed top-0 left-0 w-full z-50">
             {/* <div className="flex sticky top-0 justify-between items-center bg-white"> */}
-                {/* Top Bar */}
-                {/* <div className=" items-center text-[#B88E2F] font-bold text-sm flex justify-between z-50 px-4 py-2">
+            {/* Top Bar */}
+            {/* <div className=" items-center text-[#B88E2F] font-bold text-sm flex justify-between z-50 px-4 py-2">
                     <div>📧 prakash@swastikintl.com | 📞 +91 9831161331</div>
                 </div> */}
 
-                {/* Google Translate */}
-                {/* <div className="h-10 ">
+            {/* Google Translate */}
+            {/* <div className="h-10 ">
                 </div> */}
             {/* </div> */}
 
             {/* Navbar */}
             <header className="bg-[#f9f9f9] text-gray-800 h-20 shadow sticky top-0 z-40">
-                    
+
+
                 <div className="flex items-center  pt-5 justify-between px-6 py-2">
                     <div className="text-2xl font-bold text-[#B88E2F] flex gap-4">
                         <span className="text font-bahnschrift">SWASTIK INTERNATIONAL</span>
@@ -47,7 +48,7 @@ function Navbar() {
                             <NavLink to="/products" className={navLinkClasses}>
                                 <span className="flex items-center">
                                     Products
-                                    <svg
+                                    {/* <svg
                                         className="w-4 h-4 ml-1 transform transition-transform duration-300 group-hover:rotate-180"
                                         xmlns="http://www.w3.org/2000/svg"
                                         fill="none"
@@ -60,12 +61,12 @@ function Navbar() {
                                             strokeWidth={2}
                                             d="M19 9l-7 7-7-7"
                                         />
-                                    </svg>
+                                    </svg> */}
                                 </span>
                             </NavLink>
 
                             {/* Dropdown Menu */}
-                            <ul className="absolute left-0 w-56 bg-white shadow-lg rounded-md opacity-0 group-hover:opacity-100 invisible group-hover:visible transition duration-300 z-50">
+                            {/* <ul className="absolute left-0 w-56 bg-white shadow-lg rounded-md opacity-0 group-hover:opacity-100 invisible group-hover:visible transition duration-300 z-50">
                                 <li>
                                     <a
                                         href="#"
@@ -114,7 +115,7 @@ function Navbar() {
                                         Speciality Products
                                     </a>
                                 </li>
-                            </ul>
+                            </ul> */}
                         </li>
 
 
@@ -132,6 +133,9 @@ function Navbar() {
                             <NavLink to="/contact" className={navLinkClasses}>
                                 Contact
                             </NavLink>
+                        </li>
+                        <li>
+                            {/* <div id="google_translate_element"></div> */}
                         </li>
                     </ul>
 

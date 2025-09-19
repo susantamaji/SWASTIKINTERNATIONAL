@@ -6,7 +6,7 @@ function Footer() {
     return (
         <div>
             {/* footer--------- */}
-            <footer className="bg-[#FFF3E3] text-black py-12  translate-y-10 transition-all duration-700 will-change-transform animate-on-scroll">
+            <footer className="bg-[#e5e8f5] text-black py-12 font-extralight translate-y-10 transition-all duration-700 will-change-transform animate-on-scroll">
                 <div className="container font-semibold mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-8">
                     {/* Logo + Info */}
                     <div>

@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import Navbar from './Navbar'
 import Footer from './Footer'
 import pic from "./Pages/Images/Services-Photos/shipe.jpg"
@@ -20,8 +20,54 @@ import pic12 from "./Pages/Images/About-Images/Surgical Gloves.jpg"
 import pic13 from "./Pages/Images/About-Images/Examination Gloves.jpg"
 import pic14 from "./Pages/Images/About-Images/Eye Mask.jpg"
 
-function About() {
+import man from "./Pages/Images/Testimonials-Photos/man.jpg"
+import man2 from "./Pages/Images/Testimonials-Photos/man2.jpg"
+import girl from "./Pages/Images/Testimonials-Photos/girls.webp"
+import girl2 from "./Pages/Images/Testimonials-Photos/girls2.jpg"
+import { ChevronLeft, ChevronRight } from "lucide-react";
 
+
+const testimonials = [
+    {
+        name: "Dr. Aakash Verma",
+        role: "Orthopedic Surgeon",
+        date: "Jan 15, 2023",
+        text: "The quality of medical devices we received has been outstanding. The orthopaedic casts and bandages are durable, patient-friendly, and meet international standards. I can confidently recommend their products to other healthcare professionals.",
+        img: man,
+    },
+    {
+        name: "Prof. Neha Sharma",
+        role: "Head of Chemistry Lab, Delhi University",
+        date: "Mar 10, 2023",
+        text: "Their laboratory chemicals and equipment have greatly improved the accuracy of our experiments. From glassware to advanced microscopes, the products are reliable, precise, and delivered on time.",
+        img: girl2,
+    },
+    {
+        name: "Dr. Smita Kulkarni",
+        role: "Pharmaceutical Distributor",
+        date: "Aug 2, 2023",
+        text: "We have been sourcing generic medicines from them for over a year now. The pricing is competitive, packaging is professional, and the medicines are WHO-GMP certified. Excellent service and transparency throughout.",
+        img: girl,
+    },
+    {
+        name: "Rahul Khanna",
+        role: "Pathologist, Mumbai",
+        date: "Nov 25, 2023",
+        text: "Our diagnostic center relies on their laboratory equipment. The centrifuges, testing tubes, and other devices are robust and user-friendly. Their customer support is quick and very professional.",
+        img:man2,
+    },
+];
+
+
+function About() {
+    const [current, setCurrent] = useState(0);
+    const nextSlide = () => {
+        setCurrent((prev) => (prev === testimonials.length - 1 ? 0 : prev + 1));
+    };
+
+    const prevSlide = () => {
+        setCurrent((prev) => (prev === 0 ? testimonials.length - 1 : prev - 1));
+    };
 
     return (
         <div>
@@ -51,7 +97,7 @@ function About() {
                 </section>
                 {/* About Content */}
                 <section className="py-12 px-6 md:px-16 lg:px-24 text-center">
-                    <h2 className="text-3xl font-extrabold text-gray-900 mb-6 hover:text-red-600 transition">ABOUT US</h2>
+                    <h2 className="text-3xl font-extrabold text-gray-900 mb-6 transition">ABOUT US</h2>
                     <p className="text-gray-600 max-w-4xl mx-auto leading-relaxed">
                         Swastik International is a renowned export firm for <span className="font-semibold text-gray-800 hover:text-red-500 transition">Medical Devices, Laboratory Chemicals, Laboratory Equipment, Generic Medicine</span> and Disposable Items committed to facilitating global trade by delivering top-quality products and services to international markets. With a strong focus on customer satisfaction and adherence to international standards, we have consistently been a preferred partner for businesses seeking to expand their global reach.
                     </p>
@@ -167,6 +213,60 @@ function About() {
                 </div>
             </section>
 
+
+            <section className="bg-blue-50 py-16">
+                <div className="max-w-5xl mx-auto px-6 text-center">
+                    <h2 className="text-2xl md:text-3xl font-bold text-blue-900 mb-10">
+                        Here is what our Clients are saying About us
+                    </h2>
+
+                    {/* Testimonial Card */}
+                    <div className="relative bg-white rounded-2xl shadow-lg p-8 flex flex-col md:flex-row items-center gap-6 transition-all duration-500">
+                        <img
+                            src={testimonials[current].img}
+                            alt={testimonials[current].name}
+                            className="w-28 h-28 rounded-full object-cover border-4 border-blue-200"
+                        />
+                        <div className="text-left">
+                            <h3 className="text-xl font-semibold text-gray-800">
+                                {testimonials[current].name}
+                            </h3>
+                            <p className="text-gray-600 mb-2">{testimonials[current].role}</p>
+                            <p className="text-gray-700 mb-3">{testimonials[current].text}</p>
+                            <span className="text-sm text-gray-500">{testimonials[current].date}</span>
+                        </div>
+                    </div>
+
+                    {/* Navigation */}
+                    <div className="flex items-center justify-center mt-8 gap-6">
+                        <button
+                            onClick={prevSlide}
+                            className="p-2 rounded-full bg-white shadow hover:bg-blue-100 transition"
+                        >
+                            <ChevronLeft className="w-6 h-6 text-blue-700" />
+                        </button>
+
+                        {/* Dots */}
+                        <div className="flex gap-2">
+                            {testimonials.map((_, index) => (
+                                <button
+                                    key={index}
+                                    onClick={() => setCurrent(index)}
+                                    className={`w-3 h-3 rounded-full transition ${current === index ? "bg-blue-600" : "bg-gray-300"
+                                        }`}
+                                />
+                            ))}
+                        </div>
+
+                        <button
+                            onClick={nextSlide}
+                            className="p-2 rounded-full bg-white shadow hover:bg-blue-100 transition"
+                        >
+                            <ChevronRight className="w-6 h-6 text-blue-700" />
+                        </button>
+                    </div>
+                </div>
+            </section>
 
 
             <Footer />
