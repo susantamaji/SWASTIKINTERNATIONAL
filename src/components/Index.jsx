@@ -392,7 +392,7 @@ function Index() {
                             {/* Button */}
                             <button
                                 type="submit"
-                                className="bg-[#004D7B] hover:bg-[#0d5782] transition transform hover:scale-105 px-6 py-3 rounded-md font-semibold text-gray-200 shadow-md"
+                                className="bg-[#c29b40] hover:bg-[#B88E2F] transition transform hover:scale-105 px-6 py-3 rounded-md font-semibold text-gray-200 shadow-md"
                             >
                                 SEND US QUOTE
                             </button>
