@@ -31,6 +31,12 @@ function Index() {
     const nextSlide = () =>
         setCurrent((prev) => (prev === slides.length - 1 ? 0 : prev + 1));
 
+
+    const [openCard, setOpenCard] = useState(null); // track which card is open
+
+    const toggleCard = (id) => {
+        setOpenCard(openCard === id ? null : id); // toggle on/off
+    };
     return (
         <div>
             {/* <Navbar /> */}
@@ -69,12 +75,12 @@ function Index() {
                         <span className="font-semibold">Copper &amp; Aluminium Scrap</span>.
                     </p>
                     <NavLink to={"/contact"}>
-                    <a
-                        href=""
-                        className="bg-[#B88E2F] hover:bg-yellow-600 text-white px-6 py-3 rounded-lg font-medium transition transform hover:scale-105"
-                    >
-                        Contact Now
-                    </a></NavLink>
+                        <a
+                            href=""
+                            className="bg-[#B88E2F] hover:bg-yellow-600 text-white px-6 py-3 rounded-lg font-medium transition transform hover:scale-105"
+                        >
+                            Contact Now
+                        </a></NavLink>
                 </div>
 
                 {/* Navigation Buttons */}
@@ -123,49 +129,69 @@ function Index() {
                             <p className="text-gray-900 mb-4">
                                 High-quality and certified medical devices supplied globally with international compliance.
                             </p>
-                            <div id="more1" className="hidden text-gray-500 mb-4">
-                                Our product range includes surgical instruments, hospital equipment, and healthcare devices
-                                sourced from trusted Indian manufacturers.
-                            </div>
-                            <button onclick="toggleText('more1')" className="text-yellow-600 flex items-center space-x-1 font-medium hover:underline">
-                                <span>Read More</span>
+
+                            {/* Show/Hide Text */}
+                            {openCard === 1 && (
+                                <div className="text-gray-500 mb-4">
+                                    Our product range includes surgical instruments, hospital equipment, and healthcare devices sourced from trusted Indian manufacturers.
+                                </div>
+                            )}
+
+                            <button
+                                onClick={() => toggleCard(1)}
+                                className="text-yellow-600 flex items-center space-x-1 font-medium hover:underline"
+                            >
+                                <span>{openCard === 1 ? "Read Less" : "Read More"}</span>
                                 <i data-feather="chevron-right" className="w-4 h-4" />
                             </button>
                         </div>
                     </div>
+
                     {/* Card 2 */}
-                    <div className="bg-[#F4F5F7]  shadow-lg rounded-lg overflow-hidden hover:shadow-2xl transition transform hover:-translate-y-2">
+                    <div className="bg-[#F4F5F7] shadow-lg rounded-lg overflow-hidden hover:shadow-2xl transition transform hover:-translate-y-2">
                         <img src={pic5} alt="IT Consulting" className="w-full h-48 object-cover" />
                         <div className="p-6">
-                            <h3 className="font-bold text-lg mb-2">Software &amp; IT Consulting</h3>
+                            <h3 className="font-bold text-lg mb-2">Software & IT Consulting</h3>
                             <p className="text-gray-900 mb-4">
                                 Providing world-class IT consulting and software export services for global clients.
                             </p>
-                            <div id="more2" className="hidden text-gray-500 mb-4">
-                                From enterprise software to customized IT solutions, we bridge India’s tech expertise with
-                                international businesses.
-                            </div>
-                            <button onclick="toggleText('more2')" className="text-yellow-600 flex items-center space-x-1 font-medium hover:underline">
-                                <span>Read More</span>
+
+                            {openCard === 2 && (
+                                <div className="text-gray-500 mb-4">
+                                    From enterprise software to customized IT solutions, we bridge India’s tech expertise with international businesses.
+                                </div>
+                            )}
+
+                            <button
+                                onClick={() => toggleCard(2)}
+                                className="text-yellow-600 flex items-center space-x-1 font-medium hover:underline"
+                            >
+                                <span>{openCard === 2 ? "Read Less" : "Read More"}</span>
                                 <i data-feather="chevron-right" className="w-4 h-4" />
                             </button>
                         </div>
                     </div>
+
                     {/* Card 3 */}
-                    <div className="bg-[#F4F5F7]  shadow-lg rounded-lg overflow-hidden hover:shadow-2xl transition transform hover:-translate-y-2">
+                    <div className="bg-[#F4F5F7] shadow-lg rounded-lg overflow-hidden hover:shadow-2xl transition transform hover:-translate-y-2">
                         <img src={pic6} alt="Agro & Scrap Exports" className="w-full h-48 bg-cover" />
                         <div className="p-6">
-                            <h3 className="font-bold text-lg mb-2">Agro &amp; Scrap Exports</h3>
+                            <h3 className="font-bold text-lg mb-2">Agro & Scrap Exports</h3>
                             <p className="text-gray-900 mb-4">
-                                Supplying organic Arunachal green tea, bamboo smoking jaguar, organic jaggery, and industrial
-                                scrap worldwide.
+                                Supplying organic Arunachal green tea, bamboo smoking jaguar, organic jaggery, and industrial scrap worldwide.
                             </p>
-                            <div id="more3" className="hidden text-gray-500 mb-4">
-                                We export premium agro products along with copper and aluminium scrap, serving industries and
-                                wholesalers across the globe.
-                            </div>
-                            <button onclick="toggleText('more3')" className="text-yellow-600 flex items-center space-x-1 font-medium hover:underline">
-                                <span>Read More</span>
+
+                            {openCard === 3 && (
+                                <div className="text-gray-500 mb-4">
+                                    We export premium agro products along with copper and aluminium scrap, serving industries and wholesalers across the globe.
+                                </div>
+                            )}
+
+                            <button
+                                onClick={() => toggleCard(3)}
+                                className="text-yellow-600 flex items-center space-x-1 font-medium hover:underline"
+                            >
+                                <span>{openCard === 3 ? "Read Less" : "Read More"}</span>
                                 <i data-feather="chevron-right" className="w-4 h-4" />
                             </button>
                         </div>
