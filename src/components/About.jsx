@@ -26,6 +26,7 @@ import man from "./Pages/Images/Testimonials-Photos/man.jpg"
 import man2 from "./Pages/Images/Testimonials-Photos/man2.jpg"
 import girl from "./Pages/Images/Testimonials-Photos/girls.webp"
 import girl2 from "./Pages/Images/Testimonials-Photos/girls2.jpg"
+import pic111 from "./Pages/Images/About-Images/banner5.png"
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
 
@@ -116,7 +117,7 @@ function About() {
                             <span className="text-[#B88E2F]">Healthcare & Industries.</span>
                         </h2>
                         <p className="mt-4 text-gray-600">
-                            <strong>Since 2012, Operating across India & Abroad.</strong>
+                            {/* <strong>Since 2012, Operating across India & Abroad.</strong> */}
                         </p>
                         <p className="mt-6 text-gray-600 leading-relaxed">
                             <span className="font-semibold">Elete Biotech Pvt Ltd</span> is a
@@ -161,12 +162,12 @@ function About() {
                     {/* Right Image + Video */}
                     <div className="relative">
                         <img
-                            src="https://images.pexels.com/photos/954585/pexels-photo-954585.jpeg"
+                            src={pic111}
                             alt="Business Growth"
                             className="rounded-lg shadow-lg"
                         />
                         {/* Overlay badge */}
-                        <div className="absolute bottom-6 left-6 bg-white shadow-lg rounded-lg px-4 py-2 flex items-center gap-3">
+                        {/* <div className="absolute bottom-6 left-6 bg-white shadow-lg rounded-lg px-4 py-2 flex items-center gap-3">
                             <div className="bg-[#0BAAB6] text-white font-bold rounded-full w-12 h-12 flex items-center justify-center">
                                 12
                             </div>
@@ -176,12 +177,12 @@ function About() {
                                 </p>
                                 <span className="text-xs text-gray-500">Since 2012</span>
                             </div>
-                        </div>
+                        </div> */}
 
                         {/* Play button */}
-                        <div className="absolute bottom-6 right-6 bg-[#0BAAB6] text-white p-4 rounded-full shadow-lg cursor-pointer hover:bg-[#088892] transition">
+                        {/* <div className="absolute bottom-2 right-6 bg-[#0BAAB6] text-white p-4 rounded-full shadow-lg cursor-pointer hover:bg-[#088892] transition">
                             <FaPlay />
-                        </div>
+                        </div> */}
                     </div>
                 </div>
 
