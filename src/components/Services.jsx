@@ -92,7 +92,7 @@ function Services() {
                         <div className="bg-white shadow-md rounded-md overflow-hidden relative">
                             <img src={pic3} alt="Green Tea Export" className="w-full h-56 object-cover" />
                             <div className="p-6">
-                                <h3 className="text-2xl font-semibold text-[#b37f08]">Arunachal Green Tea</h3>
+                                <h3 className="text-2xl font-semibold text-[#b37f08]">Arunachal Pradesh Green Tea</h3>
                                 <p className="text-gray-600 mt-2">
                                     Exporting the finest organic green tea from the hills of Arunachal Pradesh,
                                     known for its purity, aroma, and health benefits.
@@ -107,7 +107,7 @@ function Services() {
                         <div className="bg-white shadow-md rounded-md overflow-hidden relative">
                             <img src={pic4} alt="Bamboo Products" className="w-full h-56 object-cover" />
                             <div className="p-6">
-                                <h3 className="text-2xl font-semibold text-[#b37f08]">Bamboo Products</h3>
+                                <h3 className="text-2xl font-semibold text-[#b37f08]">Bamboo Smoke Products</h3>
                                 <p className="text-gray-600 mt-2">
                                     Supplying eco-friendly bamboo-based products including smoking jaguar and handicrafts,
                                     supporting sustainable lifestyles.
@@ -224,7 +224,7 @@ function Services() {
                     <div className="bg-white rounded-lg shadow-lg overflow-hidden">
                         {/* Header */}
                         <div className="bg-cyan-700 text-white text-center py-4">
-                            <h2 className="text-2xl font-bold">Arunachal Tea Treasures</h2>
+                            <h2 className="text-2xl font-bold">Arunachal Pradesh Tea Treasures</h2>
                             <p className="text-sm">Premium Green Tea &amp; Bamboo Smoke Tea</p>
                         </div>
                         {/* Content */}
@@ -253,7 +253,7 @@ function Services() {
                                 </div>
                                 {/* Bamboo Smoke Tea */}
                                 <div>
-                                    <h3 className="text-lg font-semibold text-green-700 mb-2">Bamboo Smoke Tea <span className="text-sm text-gray-500">(Exclusive)</span></h3>
+                                    <h3 className="text-lg font-semibold text-green-700 mb-2">Bamboo  Smoke Tea <span className="text-sm text-gray-500">(Exclusive)</span></h3>
                                     <ul className="space-y-2 text-gray-700">
                                         <li className="flex items-center gap-2"><i className="fas fa-fire text-cyan-600" /> Smoked inside bamboo over
                                             wood fire</li>

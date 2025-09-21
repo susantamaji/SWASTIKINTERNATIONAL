@@ -3,6 +3,8 @@ import Navbar from './Navbar'
 import Footer from './Footer'
 import pic from "./Pages/Images/Services-Photos/shipe.jpg"
 import { NavLink } from 'react-router-dom'
+import { FaPlay } from "react-icons/fa";
+import { Play } from "lucide-react";
 
 import pic1 from "./Pages/Images/About-Images/DialysisCatheter.png"
 import pic2 from "./Pages/Images/About-Images/blood.jpg"
@@ -54,7 +56,7 @@ const testimonials = [
         role: "Pathologist, Mumbai",
         date: "Nov 25, 2023",
         text: "Our diagnostic center relies on their laboratory equipment. The centrifuges, testing tubes, and other devices are robust and user-friendly. Their customer support is quick and very professional.",
-        img:man2,
+        img: man2,
     },
 ];
 
@@ -104,114 +106,129 @@ function About() {
                 </section>
             </div>
 
-            <section className="py-12 bg-gray-50"> {/* Title */}
-                <div className="text-center mb-10">
-                    <h2 className="text-3xl font-bold text-white bg-gradient-to-r from-sky-700 to-sky-500 inline-block px-6 py-2 rounded-md shadow">
-                        Our Products </h2>
-                </div> {/* Products Grid */}
-                <div className="container mx-auto px-6 md:px-12 lg:px-20 grid gap-8 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
-                    {/* Product Card */}
-                    <div className="bg-white shadow-md rounded-lg p-6 flex flex-col items-center hover:shadow-xl hover:scale-105 transition transform duration-300">
-                        <img src={pic1} alt="Dialysis Catheter" className="h-28 object-contain mb-4" />
-                        <h3 className="text-gray-800 font-medium text-center">Dialysis Catheter</h3>
+            <section className="bg-[#f9f9f9] py-16 px-6 md:px-12 lg:px-20">
+                <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                    {/* Left Content */}
+                    <div>
+                        <p className="text-[#0BAAB6] font-semibold">Who We Are</p>
+                        <h2 className="text-3xl md:text-4xl font-bold text-gray-800 leading-snug">
+                            Driving Innovation in <br />
+                            <span className="text-[#B88E2F]">Healthcare & Industries.</span>
+                        </h2>
+                        <p className="mt-4 text-gray-600">
+                            <strong>Since 2012, Operating across India & Abroad.</strong>
+                        </p>
+                        <p className="mt-6 text-gray-600 leading-relaxed">
+                            <span className="font-semibold">Elete Biotech Pvt Ltd</span> is a
+                            diversified enterprise engaged in multiple domains. We specialize in{" "}
+                            <strong>medical devices</strong> and{" "}
+                            <strong>software & IT consulting</strong>, while also expanding into{" "}
+                            <strong>Arunachal green tea</strong>,{" "}
+                            <strong>bamboo smoking jaguar</strong>,{" "}
+                            <strong>organic gur (jaggery)</strong>, and{" "}
+                            <strong>copper & aluminium scrap trading</strong>. Our focus is on
+                            quality, innovation, and sustainable growth for healthcare, technology,
+                            and eco-friendly industries.
+                        </p>
+                        <NavLink to={"/contact"}>
+                            <button className="mt-6 bg-[#0BAAB6] text-white px-6 py-2 rounded-lg shadow-md hover:bg-[#088892] transition">
+                                Contact us
+                            </button>
+                        </NavLink>
+
+
+                        {/* Stats */}
+                        <div className="mt-10 grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+                            <div>
+                                <h3 className="text-3xl font-bold text-gray-800">2,550+</h3>
+                                <p className="text-gray-500 text-sm">Happy Clients</p>
+                            </div>
+                            <div>
+                                <h3 className="text-3xl font-bold text-gray-800">12,000+</h3>
+                                <p className="text-gray-500 text-sm">Projects & Deliveries</p>
+                            </div>
+                            <div>
+                                <h3 className="text-3xl font-bold text-gray-800">150+</h3>
+                                <p className="text-gray-500 text-sm">Products & Services</p>
+                            </div>
+                            <div>
+                                <h3 className="text-3xl font-bold text-gray-800">15+</h3>
+                                <p className="text-gray-500 text-sm">Global Partnerships</p>
+                            </div>
+                        </div>
                     </div>
-                    <div className="bg-white shadow-md rounded-lg p-6 flex flex-col items-center hover:shadow-xl hover:scale-105 transition transform duration-300">
-                        <img src={pic2} alt="Blood Line" className="h-28 object-contain mb-4" />
-                        <h3 className="text-gray-800 font-medium text-center">Blood Line</h3>
+
+                    {/* Right Image + Video */}
+                    <div className="relative">
+                        <img
+                            src="https://images.pexels.com/photos/954585/pexels-photo-954585.jpeg"
+                            alt="Business Growth"
+                            className="rounded-lg shadow-lg"
+                        />
+                        {/* Overlay badge */}
+                        <div className="absolute bottom-6 left-6 bg-white shadow-lg rounded-lg px-4 py-2 flex items-center gap-3">
+                            <div className="bg-[#0BAAB6] text-white font-bold rounded-full w-12 h-12 flex items-center justify-center">
+                                12
+                            </div>
+                            <div>
+                                <p className="text-sm font-semibold text-gray-800">
+                                    Years of Excellence
+                                </p>
+                                <span className="text-xs text-gray-500">Since 2012</span>
+                            </div>
+                        </div>
+
+                        {/* Play button */}
+                        <div className="absolute bottom-6 right-6 bg-[#0BAAB6] text-white p-4 rounded-full shadow-lg cursor-pointer hover:bg-[#088892] transition">
+                            <FaPlay />
+                        </div>
                     </div>
-                    <div className="bg-white shadow-md rounded-lg p-6 flex flex-col items-center hover:shadow-xl hover:scale-105 transition transform duration-300">
-                        <img src={pic3} alt="Dialyzer" className="h-28 object-contain mb-4" />
-                        <h3 className="text-gray-800 font-medium text-center">Dialyzer</h3>
+                </div>
+
+                {/* Cards Section */}
+                <div className="mt-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition group border-t-4 border-transparent hover:border-[#0BAAB6]">
+                        <h4 className="font-bold text-gray-800 mb-2 group-hover:text-[#0BAAB6]">
+                            Innovation in Healthcare
+                        </h4>
+                        <p className="text-gray-600 text-sm">
+                            Delivering advanced medical devices and diagnostic solutions to improve
+                            patient care.
+                        </p>
                     </div>
-                    <div className="bg-white shadow-md rounded-lg p-6 flex flex-col items-center hover:shadow-xl hover:scale-105 transition transform duration-300">
-                        <img src={pic4} alt="Central Venous Catheter & Kit" className="h-28 object-contain mb-4" />
-                        <h3 className="text-gray-800 font-medium text-center">Central Venous Catheter &amp; Kit</h3>
+
+                    <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition group border-t-4 border-transparent hover:border-[#0BAAB6]">
+                        <h4 className="font-bold text-gray-800 mb-2 group-hover:text-[#0BAAB6]">
+                            Technology Consulting
+                        </h4>
+                        <p className="text-gray-600 text-sm">
+                            Helping businesses grow with IT consulting, software development, and
+                            digital transformation.
+                        </p>
                     </div>
-                    <div className="bg-white shadow-md rounded-lg p-6 flex flex-col items-center hover:shadow-xl hover:scale-105 transition transform duration-300">
-                        <img src={pic5} alt="On Off Kits" className="h-28 object-contain mb-4" />
-                        <h3 className="text-gray-800 font-medium text-center">On Off Kits</h3>
+
+                    <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition group border-t-4 border-transparent hover:border-[#0BAAB6]">
+                        <h4 className="font-bold text-gray-800 mb-2 group-hover:text-[#0BAAB6]">
+                            Sustainable Products
+                        </h4>
+                        <p className="text-gray-600 text-sm">
+                            Promoting eco-friendly products like Arunachal green tea, bamboo smoking
+                            jaguar, and organic gur.
+                        </p>
                     </div>
-                    <div className="bg-white shadow-md rounded-lg p-6 flex flex-col items-center hover:shadow-xl hover:scale-105 transition transform duration-300">
-                        <img src={pic6} alt="High Pressure Syringe, J Tube" className="h-28 object-contain mb-4" />
-                        <h3 className="text-gray-800 font-medium text-center">High Pressure Syringe, J Tube</h3>
+
+                    <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition group border-t-4 border-transparent hover:border-[#0BAAB6]">
+                        <h4 className="font-bold text-gray-800 mb-2 group-hover:text-[#0BAAB6]">
+                            Global Trade
+                        </h4>
+                        <p className="text-gray-600 text-sm">
+                            Trusted supplier of copper & aluminium scrap, supporting industries
+                            worldwide with reliable sourcing.
+                        </p>
                     </div>
                 </div>
             </section>
 
-            {/* Disposable mask--- */}
-            <section className="py-12 bg-gray-50"> {/* Title */}
-                <div className="text-center mb-10">
-                    <h2 className="text-3xl font-bold text-white bg-gradient-to-r from-sky-700 to-sky-500 inline-block px-6 py-2 rounded-md shadow">
-                        Disposable Items </h2>
-                </div> {/* Products Grid */}
-                <div className="container mx-auto px-6 md:px-12 lg:px-20 grid gap-8 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
-                    {/* Product Card */}
-                    <div className="bg-white shadow-md rounded-lg p-6 flex flex-col items-center hover:shadow-xl hover:scale-105 transition transform duration-300">
-                        <img src={pic7} alt="Surgical Mask" className="h-28 object-contain mb-4" />
-                        <h3 className="text-gray-800 font-medium text-center">Surgical Mask</h3>
-                    </div>
-                    <div className="bg-white shadow-md rounded-lg p-6 flex flex-col items-center hover:shadow-xl hover:scale-105 transition transform duration-300">
-                        <img src={pic8} alt="Surgical Cap" className="h-28 object-contain mb-4" />
-                        <h3 className="text-gray-800 font-medium text-center">Surgical Cap</h3>
-                    </div>
-                    <div className="bg-white shadow-md rounded-lg p-6 flex flex-col items-center hover:shadow-xl hover:scale-105 transition transform duration-300">
-                        <img src={pic9} alt="Shoe Cover" className="h-28 object-contain mb-4" />
-                        <h3 className="text-gray-800 font-medium text-center">Shoe Cover</h3>
-                    </div>
-                    <div className="bg-white shadow-md rounded-lg p-6 flex flex-col items-center hover:shadow-xl hover:scale-105 transition transform duration-300">
-                        <img src={pic10} alt="Surgical Gown" className="h-28 object-contain mb-4" />
-                        <h3 className="text-gray-800 font-medium text-center">Surgical Gown</h3>
-                    </div>
-                    <div className="bg-white shadow-md rounded-lg p-6 flex flex-col items-center hover:shadow-xl hover:scale-105 transition transform duration-300">
-                        <img src={pic11} alt="Disposable Aprons" className="h-28 object-contain mb-4" />
-                        <h3 className="text-gray-800 font-medium text-center">Disposable Aprons</h3>
-                    </div>
-                    <div className="bg-white shadow-md rounded-lg p-6 flex flex-col items-center hover:shadow-xl hover:scale-105 transition transform duration-300">
-                        <img src={pic12} alt="Surgical Gloves" className="h-28 object-contain mb-4" />
-                        <h3 className="text-gray-800 font-medium text-center">Surgical Gloves</h3>
-                    </div>
-                    <div className="bg-white shadow-md rounded-lg p-6 flex flex-col items-center hover:shadow-xl hover:scale-105 transition transform duration-300">
-                        <img src={pic13} alt="Examination Gloves" className="h-28 object-contain mb-4" />
-                        <h3 className="text-gray-800 font-medium text-center">Examination Gloves</h3>
-                    </div>
-                    <div className="bg-white shadow-md rounded-lg p-6 flex flex-col items-center hover:shadow-xl hover:scale-105 transition transform duration-300">
-                        <img src={pic14} alt="Eye Mask" className="h-28 object-contain mb-4" />
-                        <h3 className="text-gray-800 font-medium text-center">Eye Mask</h3>
-                    </div>
-                </div> {/* Table Section */}
-                <div className="container mx-auto px-6 md:px-12 lg:px-20 mt-12 overflow-x-auto">
-                    <table className="w-full border-collapse bg-white shadow-md rounded-lg overflow-hidden text-sm">
-                        <thead className="bg-sky-600 text-white">
-                            <tr>
-                                <th className="py-3 px-4 text-left">Product</th>
-                                <th className="py-3 px-4 text-left">Size &amp; Information</th>
-                            </tr>
-                        </thead>
-                        <tbody className="divide-y divide-gray-200">
-                            <tr className="hover:bg-gray-100 transition">
-                                <td className="py-3 px-4">Surgical Reinforced Gown</td>
-                                <td className="py-3 px-4">Normal / Wraparound, SMMS, Size: M / L / XL</td>
-                            </tr>
-                            <tr className="hover:bg-gray-100 transition">
-                                <td className="py-3 px-4">Isolation Gown</td>
-                                <td className="py-3 px-4">PP Spunbond / Impervious PP+PE Laminated, Size: M / L / XL</td>
-                            </tr>
-                            <tr className="hover:bg-gray-100 transition">
-                                <td className="py-3 px-4">3 Ply Mask</td>
-                                <td className="py-3 px-4">Premium / Economy</td>
-                            </tr>
-                            <tr className="hover:bg-gray-100 transition">
-                                <td className="py-3 px-4">Shoe Cover</td>
-                                <td className="py-3 px-4">Material: LLDPE / Non-Woven</td>
-                            </tr>
-                            <tr className="hover:bg-gray-100 transition">
-                                <td className="py-3 px-4">Bouffant Cap</td>
-                                <td className="py-3 px-4">Thin Non-Woven</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </section>
 
 
             <section className="bg-blue-50 py-16">

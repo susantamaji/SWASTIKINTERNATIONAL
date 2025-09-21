@@ -3,13 +3,13 @@ import Navbar from './Navbar'
 import Footer from './Footer'
 import pic from "./Pages/Images/About-Images/banner2.png"
 
-import pic6 from "./Pages/Images/About-Images/igh Pressure Syringe, J Tube.webp"
+import pic6 from "./Pages/Images/About-Images/it1.png"
 import pic7 from "./Pages/Images/About-Images/Surgical Mask.jpg"
-import pic8 from "./Pages/Images/About-Images/Surgical Cap.jpg"
-import pic9 from "./Pages/Images/About-Images/Shoe Cover.jpg"
-import pic10 from "./Pages/Images/About-Images/Surgical Gown.webp"
-import pic11 from "./Pages/Images/About-Images/Disposable Aprons.webp"
-import pic12 from "./Pages/Images/About-Images/Surgical Gloves.jpg"
+import pic8 from "./Pages/Images/About-Images/it2.png"
+import pic9 from "./Pages/Images/About-Images/it3.png"
+import pic10 from "./Pages/Images/About-Images/tea1.webp"
+import pic11 from "./Pages/Images/About-Images/tea2.jpg"
+import pic12 from "./Pages/Images/About-Images/tea3.jpg"
 import pic13 from "./Pages/Images/About-Images/Examination Gloves.jpg"
 import pic14 from "./Pages/Images/About-Images/Eye Mask.jpg"
 import { NavLink } from 'react-router-dom'
@@ -62,7 +62,7 @@ function Products() {
               className="w-full flex justify-between items-center bg-gradient-to-r from-sky-500 to-sky-600 text-white py-3 px-4 rounded-lg shadow-md font-bold text-lg sm:text-2xl hover:opacity-90 transition cursor-pointer"
             >
               <span className="flex items-center gap-2">
-                <Pill className="w-6 h-6" /> Generic Medicines
+                <Pill className="w-6 h-6" /> Medical Devices
               </span>
               {openSection === "generic" ? <ChevronUp /> : <ChevronDown />}
             </button>
@@ -88,20 +88,20 @@ function Products() {
               className="w-full flex justify-between items-center bg-gradient-to-r from-green-500 to-green-600 text-white py-3 px-4 rounded-lg shadow-md font-bold text-lg sm:text-2xl hover:opacity-90 transition cursor-pointer"
             >
               <span className="flex items-center gap-2">
-                <FlaskConical className="w-6 h-6" /> Laboratory Chemicals & Equipment
+                <FlaskConical className="w-6 h-6" /> Software & IT Consulting
               </span>
               {openSection === "lab" ? <ChevronUp /> : <ChevronDown />}
             </button>
             {openSection === "lab" && (
               <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mt-6 animate-fadeIn">
                 <div className="bg-white rounded-lg shadow hover:shadow-xl hover:scale-105 transition">
-                  <img src={pic12} alt="Lab" className="w-full h-48 object-contain p-4" />
+                  <img src={pic6} alt="Lab" className="w-full h-48 object-contain p-4" />
                 </div>
                 <div className="bg-white rounded-lg shadow hover:shadow-xl hover:scale-105 transition">
-                  <img src={pic11} alt="Microscope" className="w-full h-48 object-contain p-4" />
+                  <img src={pic8} alt="Microscope" className="w-full h-48 object-contain p-4" />
                 </div>
                 <div className="bg-white rounded-lg shadow hover:shadow-xl hover:scale-105 transition">
-                  <img src={pic8} alt="Tubes" className="w-full h-48 object-contain p-4" />
+                  <img src={pic9} alt="Tubes" className="w-full h-48 object-contain p-4" />
                 </div>
               </div>
             )}
@@ -114,23 +114,23 @@ function Products() {
               className="w-full flex justify-between items-center bg-gradient-to-r from-purple-500 to-purple-600 text-white py-3 px-4 rounded-lg shadow-md font-bold text-lg sm:text-2xl hover:opacity-90 transition cursor-pointer"
             >
               <span className="flex items-center gap-2">
-                <Bandage className="w-6 h-6" /> Orthopaedic Cast
+                <Bandage className="w-6 h-6" /> Agro & Scrap
               </span>
               {openSection === "cast" ? <ChevronUp /> : <ChevronDown />}
             </button>
             {openSection === "cast" && (
               <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mt-6 animate-fadeIn">
                 <div className="bg-white rounded-lg shadow hover:shadow-xl hover:scale-105 transition p-4 text-center">
-                  <img src={pic9} alt="Bandages" className="w-full h-48 object-contain mb-2" />
-                  <p className="text-gray-700 font-semibold">Bandages</p>
+                  <img src={pic10} alt="Bandages" className="w-full h-48 object-contain mb-2" />
+                  <p className="text-gray-700 font-semibold">Arunachal Pradesh Tea</p>
                 </div>
                 <div className="bg-white rounded-lg shadow hover:shadow-xl hover:scale-105 transition p-4 text-center">
-                  <img src={pic10} alt="Crepe Bandages" className="w-full h-48 object-contain mb-2" />
-                  <p className="text-gray-700 font-semibold">Crepe Bandages</p>
+                  <img src={pic11} alt="Crepe Bandages" className="w-full h-48 object-contain mb-2" />
+                  <p className="text-gray-700 font-semibold">Indian Gur</p>
                 </div>
                 <div className="bg-white rounded-lg shadow hover:shadow-xl hover:scale-105 transition p-4 text-center">
-                  <img src={pic6} alt="Bandages" className="w-full h-48 object-contain mb-2" />
-                  <p className="text-gray-700 font-semibold">Bandages</p>
+                  <img src={pic12} alt="Bandages" className="w-full h-48 object-contain mb-2" />
+                  <p className="text-gray-700 font-semibold">Bamboo Green Tea</p>
                 </div>
               </div>
             )}

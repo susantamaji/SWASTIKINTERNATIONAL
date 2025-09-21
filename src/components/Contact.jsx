@@ -91,7 +91,7 @@ function Contact() {
                 <span className="text-cyan-600 text-xl">✉️</span>
                 <p><strong>Email:</strong><br />
                   <a href="mailto:swastikintl17@gmail.com" className="text-cyan-600 hover:underline">
-                    swastikintl17@gmail.com
+                    info@swastikintl.com
                   </a>
                 </p>
               </div>
