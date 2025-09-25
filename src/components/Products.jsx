@@ -7,13 +7,16 @@ import pic6 from "./Pages/Images/About-Images/it1.png"
 import pic7 from "./Pages/Images/About-Images/Surgical Mask.jpg"
 import pic8 from "./Pages/Images/About-Images/it2.png"
 import pic9 from "./Pages/Images/About-Images/it3.png"
-import pic10 from "./Pages/Images/About-Images/tea1.webp"
-import pic11 from "./Pages/Images/About-Images/tea2.jpg"
-import pic12 from "./Pages/Images/About-Images/tea3.jpg"
+import pic10 from "./Pages/Images/About-Images/aruna.jpg"
+import pic11 from "./Pages/Images/About-Images/tea4.jpg"
+import pic12 from "./Pages/Images/About-Images/bamboo.jpg"
 import pic13 from "./Pages/Images/About-Images/Examination Gloves.jpg"
 import pic14 from "./Pages/Images/About-Images/Eye Mask.jpg"
+
+import video1st from "./Pages/Images/About-Images/video1st.mp4"
+import video2nd from "./Pages/Images/About-Images/video2nd.mp4"
 import { NavLink } from 'react-router-dom'
-import { ChevronDown, ChevronUp, FlaskConical, Pill, Bandage } from "lucide-react";
+import { ChevronDown, ChevronUp, FlaskConical, Pill, Bandage, ChevronLeft, ChevronRight } from "lucide-react";
 
 function Products() {
 
@@ -21,6 +24,30 @@ function Products() {
 
   const toggleSection = (section) => {
     setOpenSection(openSection === section ? null : section);
+  };
+
+
+  const [activeVideo, setActiveVideo] = useState(0);
+
+  const videos = [
+    {
+      id: 1,
+      src: video1st,
+    },
+    {
+      id: 2,
+      src: video2nd,
+      poster: "https://images.pexels.com/photos/14849664/pexels-photo-14849664.jpeg",
+    }
+  ];
+
+
+  const prevVideo = () => {
+    setActiveVideo((prev) => (prev === 0 ? videos.length - 1 : prev - 1));
+  };
+
+  const nextVideo = () => {
+    setActiveVideo((prev) => (prev === videos.length - 1 ? 0 : prev + 1));
   };
 
   return (
@@ -138,6 +165,78 @@ function Products() {
 
         </div>
       </section>
+
+
+      {/* Video Carousel */}
+
+      <section className=" bg-gray-100">
+        <div className="container mx-auto px-6 text-center">
+          <h2 className="md:text-4xl font-bold text-cyan-600 mb-8">
+         OUR WORK ➡️
+          </h2>
+
+          <div className="relative max-w-3xl mx-auto">
+            {/* Video */}
+            <div className="rounded-2xl overflow-hidden bg-black">
+              {videos[activeVideo].src.includes("youtube") ? (
+                <iframe
+                  src={videos[activeVideo].src + "&autoplay=1"}
+                  title={`Video ${videos[activeVideo].id}`}
+                  className="w-full h-60 sm:h-72 md:h-96"
+                  allow="autoplay; encrypted-media"
+                  allowFullScreen
+                ></iframe>
+              ) : (
+                <video
+                  key={videos[activeVideo].id}
+                  src={videos[activeVideo].src}
+                  // poster={videos[activeVideo].poster}
+                  controls
+                  autoPlay
+                  className="w-full h-60 sm:h-72 md:h-96 object-cover"
+                />
+              )}
+            </div>
+
+            {/* Caption */}
+            <div className="p-4 bg-white shadow rounded-b-2xl">
+              <h3 className="text-lg font-semibold text-gray-700">
+                {/* Customer {videos[activeVideo].id} */}
+              </h3>
+              <p className="text-sm text-gray-500">
+                “This testimonial highlights the great experience with our service.”
+              </p>
+            </div>
+
+            {/* Navigation Arrows */}
+            <button
+              onClick={prevVideo}
+              className="absolute top-1/2 -left-6 sm:-left-12 transform -translate-y-1/2 bg-white shadow p-2 rounded-full hover:bg-gray-200 transition"
+            >
+              <ChevronLeft className="w-5 h-5 sm:w-6 sm:h-6 text-gray-700" />
+            </button>
+            <button
+              onClick={nextVideo}
+              className="absolute top-1/2 -right-6 sm:-right-12 transform -translate-y-1/2 bg-white shadow p-2 rounded-full hover:bg-gray-200 transition"
+            >
+              <ChevronRight className="w-5 h-5 sm:w-6 sm:h-6 text-gray-700" />
+            </button>
+
+            {/* Dots Navigation */}
+            <div className="flex justify-center mt-4 space-x-2">
+              {videos.map((_, idx) => (
+                <button
+                  key={idx}
+                  onClick={() => setActiveVideo(idx)}
+                  className={`w-3 h-3 rounded-full ${idx === activeVideo ? "bg-cyan-600" : "bg-gray-300"
+                    }`}
+                ></button>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
 
 
       <Footer />

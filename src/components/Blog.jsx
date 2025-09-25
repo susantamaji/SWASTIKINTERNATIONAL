@@ -99,7 +99,7 @@ function Blog() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {/* Card 1 */}
               <div className="bg-white shadow rounded-md overflow-hidden">
-                <img src={pic3} alt="Related Post" className="w-full h-48 object-cover" />
+                <img src={pic3} alt="Related Post" className="w-full h-62 object-cover" />
                 <div className="p-4">
                   <h3 className="text-lg font-semibold">Why Arunachal Green Tea is Winning Global Markets</h3>
                   <p className="text-sm text-gray-500">Posted on 2 March 2025 by Swastik Team</p>
@@ -107,7 +107,7 @@ function Blog() {
               </div>
               {/* Card 2 */}
               <div className="bg-white shadow rounded-md overflow-hidden">
-                <img src={pic4} alt="Related Post" className="w-full h-48 object-cover" />
+                <img src={pic4} alt="Related Post" className="w-full h-62 object-cover" />
                 <div className="p-4">
                   <h3 className="text-lg font-semibold">The Growing Demand for Copper &amp; Aluminium Scrap</h3>
                   <p className="text-sm text-gray-500">Posted on 20 February 2025 by Swastik Team</p>
