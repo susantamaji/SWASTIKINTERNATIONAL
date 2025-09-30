@@ -4,19 +4,23 @@ import Footer from './Footer'
 import pic from "./Pages/Images/About-Images/banner2.png"
 
 import pic6 from "./Pages/Images/About-Images/it1.png"
-import pic7 from "./Pages/Images/About-Images/Surgical Mask.jpg"
+import pic7 from "./Pages/Images/About-Images/ecg.jpg"
 import pic8 from "./Pages/Images/About-Images/it2.png"
 import pic9 from "./Pages/Images/About-Images/it3.png"
 import pic10 from "./Pages/Images/About-Images/aruna.jpg"
 import pic11 from "./Pages/Images/About-Images/tea4.jpg"
 import pic12 from "./Pages/Images/About-Images/bamboo.jpg"
-import pic13 from "./Pages/Images/About-Images/Examination Gloves.jpg"
-import pic14 from "./Pages/Images/About-Images/Eye Mask.jpg"
+import pic13 from "./Pages/Images/About-Images/egg.jpg"
+import pic14 from "./Pages/Images/About-Images/vital.webp"
+
+import picnew from "./Pages/Images/About-Images/new.jpg"
+import picnew1 from "./Pages/Images/About-Images/new1.jpg"
+import picnew2 from "./Pages/Images/About-Images/new3.jpg"
 
 import video1st from "./Pages/Images/About-Images/video1st.mp4"
 import video2nd from "./Pages/Images/About-Images/video2nd.mp4"
 import { NavLink } from 'react-router-dom'
-import { ChevronDown, ChevronUp, FlaskConical, Pill, Bandage, ChevronLeft, ChevronRight } from "lucide-react";
+import { ChevronDown, ChevronUp, FlaskConical, Pill, Bandage, ChevronLeft, ChevronRight, Columns4 } from "lucide-react";
 
 function Products() {
 
@@ -71,7 +75,7 @@ function Products() {
             <p className="text-lg font-medium">
               Insights on <span className="text-cyan-500 font-bold">Global Trade</span> – from
               <br /> medical devices &amp; IT consulting to
-              <span className="text-cyan-500 font-bold">organic green tea</span>, bamboo,
+              <span className="text-cyan-500 font-bold">organic green tea</span>, bamboo smoke tea,
               jaggery, and industrial metals.
             </p>
           </div>
@@ -141,12 +145,16 @@ function Products() {
               className="w-full flex justify-between items-center bg-gradient-to-r from-purple-500 to-purple-600 text-white py-3 px-4 rounded-lg shadow-md font-bold text-lg sm:text-2xl hover:opacity-90 transition cursor-pointer"
             >
               <span className="flex items-center gap-2">
-                <Bandage className="w-6 h-6" /> Agro & Scrap
+                <Bandage className="w-6 h-6" /> Tea & Gur
               </span>
               {openSection === "cast" ? <ChevronUp /> : <ChevronDown />}
             </button>
             {openSection === "cast" && (
               <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mt-6 animate-fadeIn">
+                 <div className="bg-white rounded-lg shadow hover:shadow-xl hover:scale-105 transition p-4 text-center">
+                  <img src={pic12} alt="Bandages" className="w-full h-48 object-contain mb-2" />
+                  <p className="text-gray-700 font-semibold">Bamboo Smoke Tea</p>
+                </div>
                 <div className="bg-white rounded-lg shadow hover:shadow-xl hover:scale-105 transition p-4 text-center">
                   <img src={pic10} alt="Bandages" className="w-full h-48 object-contain mb-2" />
                   <p className="text-gray-700 font-semibold">Arunachal Pradesh Tea</p>
@@ -155,9 +163,36 @@ function Products() {
                   <img src={pic11} alt="Crepe Bandages" className="w-full h-48 object-contain mb-2" />
                   <p className="text-gray-700 font-semibold">Indian Gur</p>
                 </div>
+               
+              </div>
+            )}
+          </div>
+
+          {/* Copper  */}
+          <div className="mb-6">
+            <button
+              onClick={() => toggleSection("castf")}
+              className="w-full flex justify-between items-center bg-gradient-to-r from-yellow-500 to-yellow-600 text-white py-3 px-4 rounded-lg shadow-md font-bold text-lg sm:text-2xl hover:opacity-90 transition cursor-pointer"
+            >
+              <span className="flex items-center gap-2">
+               <Columns4 className="w-6 h-6" /> Copper
+                
+              </span>
+              {openSection === "castf" ? <ChevronUp /> : <ChevronDown />}
+            </button>
+            {openSection === "castf" && (
+              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mt-6 animate-fadeIn">
                 <div className="bg-white rounded-lg shadow hover:shadow-xl hover:scale-105 transition p-4 text-center">
-                  <img src={pic12} alt="Bandages" className="w-full h-48 object-contain mb-2" />
-                  <p className="text-gray-700 font-semibold">Bamboo Green Tea</p>
+                  <img src={picnew} alt="Bandages" className="w-full h-48 object-contain mb-2" />
+                  {/* <p className="text-gray-700 font-semibold">Arunachal Pradesh Tea</p> */}
+                </div>
+                <div className="bg-white rounded-lg shadow hover:shadow-xl hover:scale-105 transition p-4 text-center">
+                  <img src={picnew1} alt="Crepe Bandages" className="w-full h-48 object-contain mb-2" />
+                  {/* <p className="text-gray-700 font-semibold">Indian Gur</p> */}
+                </div>
+                <div className="bg-white rounded-lg shadow hover:shadow-xl hover:scale-105 transition p-4 text-center">
+                  <img src={picnew2} alt="Bandages" className="w-full h-48 object-contain mb-2" />
+                  {/* <p className="text-gray-700 font-semibold">Bamboo Smoke Tea</p> */}
                 </div>
               </div>
             )}
@@ -172,7 +207,7 @@ function Products() {
       <section className=" bg-gray-100">
         <div className="container mx-auto px-6 text-center">
           <h2 className="md:text-4xl font-bold text-cyan-600 mb-8">
-         OUR WORK ➡️
+            OUR WORK ➡️
           </h2>
 
           <div className="relative max-w-3xl mx-auto">

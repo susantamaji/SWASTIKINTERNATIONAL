@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
-import pic1 from "./Pages/Images/indexPhoto/pexels-photo-11146455.jpeg";
-import pic2 from "./Pages/Images/indexPhoto/pexels-photo-14005602.jpeg";
-import pic3 from "./Pages/Images/indexPhoto/pexels-photo-3840441.jpeg";
+import pic1 from "./Pages/Images/indexPhoto/1st.jpg";
+import pic2 from "./Pages/Images/indexPhoto/2nd.jpg";
+import pic3 from "./Pages/Images/indexPhoto/3rd.jpg";
 import pic4 from "./Pages/Images/indexPhoto/medical.jpeg"
 import pic5 from "./Pages/Images/indexPhoto/it.jpg"
 import pic6 from "./Pages/Images/indexPhoto/tea.jpg"
@@ -37,6 +37,8 @@ function Index() {
     const toggleCard = (id) => {
         setOpenCard(openCard === id ? null : id); // toggle on/off
     };
+
+    const [showMore, setShowMore] = useState(false);
     return (
         <div>
             {/* <Navbar /> */}
@@ -125,7 +127,7 @@ function Index() {
                     <div className="bg-[#F4F5F7] shadow-lg rounded-lg overflow-hidden hover:shadow-2xl transition transform hover:-translate-y-2">
                         <img src={pic4} alt="Medical Devices" className="w-full h-48 object-cover" />
                         <div className="p-6">
-                            <h3 className="font-bold text-lg mb-2">Medical Devices Export</h3>
+                            <h3 className="font-bold text-lg mb-2">Medical Devices</h3>
                             <p className="text-gray-900 mb-4">
                                 High-quality and certified medical devices supplied globally with international compliance.
                             </p>
@@ -242,20 +244,51 @@ function Index() {
                                 WHY CHOOSE US?
                                 <span className="block w-16 h-0.5 bg-yellow-500 mt-2" />
                             </h2>
-                            <p className="text-gray-600 mb-4">
-                                At <span className="font-semibold">Swastik International</span>, we are committed to connecting India’s
-                                finest products with global markets. From <span className="font-medium">medical devices and IT
-                                    solutions</span>
-                                to <span className="font-medium">organic green tea, bamboo products, jaggery, and metal scrap</span>,
-                                we ensure world-class quality and reliability.
-                            </p>
-                            <p className="text-gray-600 mb-6">
-                                With a strong supply chain, certified products, and ethical business practices,
-                                we deliver excellence that builds lasting partnerships worldwide.
-                            </p>
-                            <a href="#services" className="text-yellow-600 font-semibold flex items-center gap-2 hover:translate-x-2 transition">
-                                READ MORE <i data-lucide="chevron-right" />
-                            </a>
+                            <div className="p-6">
+                                <p className="text-gray-600 mb-4">
+                                    At <span className="font-semibold">Swastik International</span>, we are
+                                    committed to connecting India’s finest products with global markets.
+                                    From{" "}
+                                    <span className="font-medium">medical devices and IT solutions</span> to{" "}
+                                    <span className="font-medium">
+                                        organic green tea, bamboo products, jaggery, and metal scrap
+                                    </span>
+                                    , we ensure world-class quality and reliability.
+                                </p>
+
+                                <p className="text-gray-600 mb-6">
+                                    With a strong supply chain, certified products, and ethical business
+                                    practices, we deliver excellence that builds lasting partnerships
+                                    worldwide.
+                                </p>
+
+                                {/* Toggle Button */}
+                                <button
+                                    onClick={() => setShowMore(!showMore)}
+                                    className="text-yellow-600 font-semibold flex items-center gap-2 hover:translate-x-2 transition"
+                                >
+                                    {showMore ? "READ LESS" : "READ MORE"}
+                                    <i data-lucide={showMore ? "chevron-up" : "chevron-right"} />
+                                </button>
+
+                                {/* Hidden Content */}
+                                {showMore && (
+                                    <div className="mt-4 text-gray-700 space-y-3">
+                                        <p>
+                                            🌍 We export to multiple countries ensuring compliance with
+                                            international standards.
+                                        </p>
+                                        <p>
+                                            ✅ Our team focuses on sustainability, innovation, and customer
+                                            satisfaction at every step.
+                                        </p>
+                                        <p>
+                                            📦 From sourcing to logistics, we manage everything seamlessly to
+                                            ensure timely delivery.
+                                        </p>
+                                    </div>
+                                )}
+                            </div>
                         </div>
                         {/* Right Features */}
                         <div className="space-y-6 border-l-2 border-red-500 pl-6">
@@ -303,10 +336,16 @@ function Index() {
                 <section className="py-16 text-center">
                     <div className="max-w-6xl mx-auto px-4 md:px-6">
                         {/* Heading */}
-                        <h2 className="text-2xl md:text-3xl font-bold mb-2 text-[#004D7B]">OUR SERVICE PROCESS</h2>
+                        <h2 className="text-2xl md:text-3xl font-bold mb-2 text-[#004D7B]">
+                            OUR SERVICE PROCESS
+                        </h2>
                         <p className="text-gray-800 text-2xl mb-8 md:mb-12">
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                            We follow a streamlined process that ensures efficiency, quality, and trust at every step.
+                            From understanding client requirements and sourcing premium products to rigorous quality
+                            checks and on-time delivery, our service process is designed to build long-term partnerships
+                            and deliver exceptional value worldwide.
                         </p>
+
                         {/* Responsive Line */}
                         <div className="hidden md:block">
                             <hr className="w-[900px] z-10 h-1 bg-[#004D7B] relative left-20 top-[90px]" />

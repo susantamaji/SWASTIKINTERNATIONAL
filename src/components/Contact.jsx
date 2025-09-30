@@ -1,7 +1,7 @@
 import React from 'react'
 import Footer from './Footer'
 
-import pic from "./Pages/Images/Contact-Photos/hand.jpeg"
+import pic from "./Pages/Images/indexPhoto/3rd.jpg"
 import pichand from "./Pages/Images/Contact-Photos/group.jpeg"
 import { NavLink } from 'react-router-dom'
 
@@ -11,7 +11,7 @@ function Contact() {
 
       <section className="relative bg-cover bg-center h-[400px] flex items-center justify-center" style={{ backgroundImage: `url(${pic})` }}>
         {/* Overlay */}
-        <div className="absolute inset-0 bg-black/70" />
+        <div className="absolute inset-0 bg-black/60" />
         {/* Content */}
         <div className="relative container mx-auto px-20 flex flex-col md:flex-row justify-between items-center text-white">
           {/* Left Text */}
@@ -26,10 +26,10 @@ function Contact() {
           <div className="mt-4 md:mt-0 text-center md:text-right max-w-lg">
             <p className="text-lg font-medium leading-relaxed">
               Swastik International Exports connects the world with<br />
+              <span className="text-cyan-500 font-bold">Bamboo Smoke Tea</span>,
               <span className="text-cyan-500 font-bold">Medical Devices</span>,
               <span className="text-cyan-500 font-bold">IT Solutions</span>,<br />
               <span className="text-cyan-500 font-bold">Arunachal Green Tea</span>,
-              <span className="text-cyan-500 font-bold">Bamboo Products</span>,<br />
               <span className="text-cyan-500 font-bold">Organic Jaggery</span>, and
               <span className="text-cyan-500 font-bold">Metal Scrap</span><br />
               — delivered with <span className="text-cyan-500 font-bold">speed</span> and

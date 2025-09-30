@@ -1,6 +1,6 @@
 import React from 'react'
 import Footer from './Footer'
-import pic from "./Pages/Images/Blog-images/ship.jpeg"
+import pic from "./Pages/Images/indexPhoto/2nd.jpg"
 import pic1 from "./Pages/Images/Blog-images/flight.jpg"
 
 import pic3 from "./Pages/Images/indexPhoto/tea.jpg"
@@ -14,6 +14,8 @@ import pic8 from "./Pages/Images/Blog-images/medical.jpg"
 import pic9 from "./Pages/Images/Blog-images/laptop.jpg"
 import pic10 from "./Pages/Images/Blog-images/OrganicJaggery.jpg"
 import pic11 from "./Pages/Images/Blog-images/Sustainability.jpg"
+
+import myproducts from "./Pages/Images/indexPhoto/1st.jpg"
 
 function Blog() {
   return (
@@ -50,7 +52,7 @@ function Blog() {
         <div className="md:col-span-2 space-y-10">
           {/* BLOG CONTENT */}
           <div className="bg-white shadow-md rounded-md overflow-hidden p-6">
-            <img src={pic} alt="Blog Post" className="w-full h-64 object-cover mb-6" />
+            <img src={myproducts} alt="Blog Post" className="w-full h-64 object-cover mb-6" />
             <h1 className="text-2xl font-bold mb-2">Global Demand for Organic Indian Products</h1>
             <p className="text-sm text-gray-500 mb-4">
               Posted on 8 March 2025 by <span className="font-medium">Swastik Team</span>

@@ -1,5 +1,6 @@
 import React from 'react'
 import pic from "./Images/newlogo.png"
+import { NavLink } from 'react-router-dom'
 
 
 function Footer() {
@@ -37,14 +38,14 @@ function Footer() {
                     {/* Quick Links */}
                     <div>
                         <h3 className="text-yellow-[#B88E2F] font-semibold mb-4 border-b-2 border-yellow-600 inline-block">QUICK LINKS</h3>
-                        <ul className="space-y-2 text-sm">
-                            <li><a href="#" className="hover:text-yellow-500 transition">About Us</a></li>
-                            <li><a href="#" className="hover:text-yellow-500 transition">Our Products</a></li>
-                            <li><a href="#" className="hover:text-yellow-500 transition">Medical Devices</a></li>
-                            <li><a href="#" className="hover:text-yellow-500 transition">Agro Products</a></li>
-                            <li><a href="#" className="hover:text-yellow-500 transition">Industrial Supplies</a></li>
-                            <li><a href="#" className="hover:text-yellow-500 transition">IT Consulting</a></li>
-                            <li><a href="#" className="hover:text-yellow-500 transition">Contact Us</a></li>
+                        <ul className="space-y-2 flex flex-col text-sm">
+                            <NavLink to={"/about"}><a href="#" className="hover:text-yellow-500 transition">About Us</a></NavLink>
+                            <NavLink to={"/products"}><a href="#" className="hover:text-yellow-500 transition">Our Products</a></NavLink>
+                            <NavLink to={"/products"}><a href="#" className="hover:text-yellow-500 transition">Medical Devices</a></NavLink>
+                            <NavLink to={"/products"}><a href="#" className="hover:text-yellow-500 transition">Agro Products</a></NavLink>
+                            <NavLink to={"/products"}><a href="#" className="hover:text-yellow-500 transition">Industrial Supplies</a></NavLink>
+                            <NavLink to={"/products"}><a href="#" className="hover:text-yellow-500 transition">IT Consulting</a></NavLink>
+                           <NavLink to={"/contact"}><a href="#" className="hover:text-yellow-500 transition">Contact Us</a></NavLink>
                         </ul>
                     </div>
                     {/* Useful Links */}
@@ -74,7 +75,7 @@ function Footer() {
                         </div> */}
 
                         <div className="flex gap-3 mt-4">
-                            <a href="#" className="bg-yellow-[#B88E2F] p-2 rounded-full hover:text-yellow-500 transition">
+                            <a href="https://www.facebook.com/profile.php?id=100064560615109&mibextid=ZbWKwL" className="bg-yellow-[#B88E2F] p-2 rounded-full hover:text-yellow-500 transition">
                                 <i className="fab fa-facebook-f" />
                             </a>
                             <a href="#" className="bg-yellow-[#B88E2F] p-2 rounded-full hover:text-yellow-500 transition">
@@ -92,9 +93,9 @@ function Footer() {
                 </div>
                 {/* Bottom Bar */}
                 <div className="border-t border-gray-700 mt-10 pt-6 text-center text-xs text-gray-800">
-                    <p>COPYRIGHT © 2025 <span className="text-yellow-400 hover:text-yellow-500">SWASTIK INTERNATIONAL</span>. ALL
+                    <p>COPYRIGHT © 2025 <span className="text-yellow-800 hover:text-yellow-500">SWASTIK INTERNATIONAL</span>. ALL
                         RIGHTS RESERVED</p>
-                    <p>DESIGNED &amp; DEVELOPED BY: <span className="text-yellow-400 hover:text-yellow-500">LK TECHNOLOGY</span></p>
+                    <p>DESIGNED &amp; DEVELOPED BY: <span className="text-yellow-800 hover:text-yellow-500">LK TECHNOLOGY</span></p>
                 </div>
             </footer>
 

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import Navbar from './Navbar'
 import Footer from './Footer'
-import pic from "./Pages/Images/Services-Photos/shipe.jpg"
+import pic from "./Pages/Images/indexPhoto/3rd.jpg"
 import { NavLink } from 'react-router-dom'
 import { FaPlay } from "react-icons/fa";
 import { Play } from "lucide-react";
@@ -102,8 +102,13 @@ function About() {
                 <section className="py-12 px-6 md:px-16 lg:px-24 text-center">
                     <h2 className="text-3xl font-extrabold text-gray-900 mb-6 transition">ABOUT US</h2>
                     <p className="text-gray-600 max-w-4xl mx-auto leading-relaxed">
-                        Swastik International is a renowned export firm for <span className="font-semibold text-gray-800 hover:text-red-500 transition">Medical Devices, Laboratory Chemicals, Laboratory Equipment, Generic Medicine</span> and Disposable Items committed to facilitating global trade by delivering top-quality products and services to international markets. With a strong focus on customer satisfaction and adherence to international standards, we have consistently been a preferred partner for businesses seeking to expand their global reach.
+                        Swastik International is a renowned export firm specializing in
+                        <span className="font-semibold text-gray-800 hover:text-cyan-500 transition">
+                            Medical Devices, Laboratory Chemicals, Laboratory Equipment, Generic Medicines
+                        </span>
+                        and Disposable Items. We are committed to facilitating global trade by delivering top-quality products and services to international markets. With a strong focus on customer satisfaction and strict adherence to international standards, we have consistently remained a preferred partner for businesses aiming to expand their global presence.
                     </p>
+
                 </section>
             </div>
 
@@ -190,7 +195,7 @@ function About() {
                 <div className="mt-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
                     <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition group border-t-4 border-transparent hover:border-[#0BAAB6]">
                         <h4 className="font-bold text-gray-800 mb-2 group-hover:text-[#0BAAB6]">
-                            Innovation in Healthcare
+                            Medical Devices
                         </h4>
                         <p className="text-gray-600 text-sm">
                             Delivering advanced medical devices and diagnostic solutions to improve
