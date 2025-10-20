@@ -31,7 +31,7 @@ function Contact() {
               <span className="text-cyan-500 font-bold">IT Solutions</span>,<br />
               <span className="text-cyan-500 font-bold">Arunachal Green Tea</span>,
               <span className="text-cyan-500 font-bold">Organic Jaggery</span>, and
-              <span className="text-cyan-500 font-bold">Metal Scrap</span><br />
+              {/* <span className="text-cyan-500 font-bold">Metal Scrap</span><br /> */}
               — delivered with <span className="text-cyan-500 font-bold">speed</span> and
               <span className="text-cyan-500 font-bold">trust</span>.
             </p>

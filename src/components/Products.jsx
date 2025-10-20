@@ -76,7 +76,7 @@ function Products() {
               Insights on <span className="text-cyan-500 font-bold">Global Trade</span> – from
               <br /> medical devices &amp; IT consulting to
               <span className="text-cyan-500 font-bold">organic green tea</span>, bamboo smoke tea,
-              jaggery, and industrial metals.
+              jaggery.
             </p>
           </div>
         </div>
@@ -169,7 +169,7 @@ function Products() {
           </div>
 
           {/* Copper  */}
-          <div className="mb-6">
+          {/* <div className="mb-6">
             <button
               onClick={() => toggleSection("castf")}
               className="w-full flex justify-between items-center bg-gradient-to-r from-yellow-500 to-yellow-600 text-white py-3 px-4 rounded-lg shadow-md font-bold text-lg sm:text-2xl hover:opacity-90 transition cursor-pointer"
@@ -183,20 +183,20 @@ function Products() {
             {openSection === "castf" && (
               <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mt-6 animate-fadeIn">
                 <div className="bg-white rounded-lg shadow hover:shadow-xl hover:scale-105 transition p-4 text-center">
-                  <img src={picnew} alt="Bandages" className="w-full h-48 object-contain mb-2" />
+                  <img src={picnew} alt="Bandages" className="w-full h-48 object-contain mb-2" /> */}
                   {/* <p className="text-gray-700 font-semibold">Arunachal Pradesh Tea</p> */}
-                </div>
+                {/* </div>
                 <div className="bg-white rounded-lg shadow hover:shadow-xl hover:scale-105 transition p-4 text-center">
-                  <img src={picnew1} alt="Crepe Bandages" className="w-full h-48 object-contain mb-2" />
+                  <img src={picnew1} alt="Crepe Bandages" className="w-full h-48 object-contain mb-2" /> */}
                   {/* <p className="text-gray-700 font-semibold">Indian Gur</p> */}
-                </div>
+                {/* </div>
                 <div className="bg-white rounded-lg shadow hover:shadow-xl hover:scale-105 transition p-4 text-center">
-                  <img src={picnew2} alt="Bandages" className="w-full h-48 object-contain mb-2" />
+                  <img src={picnew2} alt="Bandages" className="w-full h-48 object-contain mb-2" /> */}
                   {/* <p className="text-gray-700 font-semibold">Bamboo Smoke Tea</p> */}
-                </div>
+                {/* </div>
               </div>
             )}
-          </div>
+          </div> */}
 
         </div>
       </section>

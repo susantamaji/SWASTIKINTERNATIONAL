@@ -221,12 +221,13 @@ function Index() {
                     <p className="text-lg md:text-xl text-white font-medium">
                         Delivering Organic Green Tea, Bamboo Jaguar, Jaggery, and Metal Scrap worldwide
                     </p>
+                    <NavLink to={"/contact"}>
                     <a
                         href="./contact.html"
                         className="mt-6 inline-block bg-[#d5911a] hover:bg-[#b29609] text-white transition px-6 py-3 rounded-lg font-semibold"
                     >
                         Contact With Us
-                    </a>
+                    </a></NavLink>
                 </div>
             </section>
 
@@ -400,7 +401,7 @@ function Index() {
                     {/* Form */}
                     <div className="bg-transparent text-white">
                         <h2 className="text-3xl font-bold mb-2">GET A FREE QUOTE</h2>
-                        <p className="mb-6 tracking-widest text-sm">
+                        <p className="mb-6 tracking-widest text-sm font-bold">
                             WE ALWAYS USE BEST &amp; FASTEST FLEETS
                         </p>
                         <form className="space-y-4">
@@ -408,19 +409,19 @@ function Index() {
                             <input
                                 type="text"
                                 placeholder="Full Name"
-                                className="w-full px-4 py-3 rounded-md bg-white text-gray-700 focus:ring-2 focus:ring-red-500 outline-none transition"
+                                className="w-full px-4 py-3 rounded-md bg-white text-gray-700 focus:ring-2 focus:ring-cyan-500 outline-none transition"
                             />
                             {/* Email + Mobile */}
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                                 <input
                                     type="email"
                                     placeholder="Email"
-                                    className="px-4 py-3 rounded-md bg-white text-gray-700 focus:ring-2 focus:ring-red-500 outline-none transition"
+                                    className="px-4 py-3 rounded-md bg-white text-gray-700 focus:ring-2 focus:ring-[#B88E2F] outline-none transition"
                                 />
                                 <input
                                     type="text"
                                     placeholder="Mobile"
-                                    className="px-4 py-3 rounded-md bg-white text-gray-700 focus:ring-2 focus:ring-red-500 outline-none transition"
+                                    className="px-4 py-3 rounded-md bg-white text-gray-700 focus:ring-2 focus:ring-[#B88E2F] outline-none transition"
                                 />
                             </div>
                             {/* Destination From + To */}
@@ -428,12 +429,12 @@ function Index() {
                                 <input
                                     type="text"
                                     placeholder="Destination From"
-                                    className="px-4 py-3 rounded-md bg-white text-gray-700 focus:ring-2 focus:ring-red-500 outline-none transition"
+                                    className="px-4 py-3 rounded-md bg-white text-gray-700 focus:ring-2 focus:ring-[#B88E2F] outline-none transition"
                                 />
                                 <input
                                     type="text"
                                     placeholder="Destination To"
-                                    className="px-4 py-3 rounded-md bg-white text-gray-700 focus:ring-2 focus:ring-red-500 outline-none transition"
+                                    className="px-4 py-3 rounded-md bg-white text-gray-700 focus:ring-2 focus:ring-[#B88E2F] outline-none transition"
                                 />
                             </div>
                             {/* Shipping Type + Date */}
@@ -441,18 +442,18 @@ function Index() {
                                 <input
                                     type="text"
                                     placeholder="Shipping Type"
-                                    className="px-4 py-3 rounded-md bg-white text-gray-700 focus:ring-2 focus:ring-red-500 outline-none transition"
+                                    className="px-4 py-3 rounded-md bg-white text-gray-700 focus:ring-2 focus:ring-[#B88E2F] outline-none transition"
                                 />
                                 <input
                                     type="date"
-                                    className="px-4 py-3 rounded-md bg-white text-gray-700 focus:ring-2 focus:ring-red-500 outline-none transition"
+                                    className="px-4 py-3 rounded-md bg-white text-gray-700 focus:ring-2 focus:ring-[#B88E2F] outline-none transition"
                                 />
                             </div>
                             {/* Message */}
                             <textarea
                                 rows={4}
                                 placeholder="Message"
-                                className="w-full px-4 py-3 rounded-md bg-white text-gray-700 focus:ring-2 focus:ring-red-500 outline-none transition"
+                                className="w-full px-4 py-3 rounded-md bg-white text-gray-700 focus:ring-2 focus:ring-[#B88E2F] outline-none transition"
                             />
                             {/* Button */}
                             <button

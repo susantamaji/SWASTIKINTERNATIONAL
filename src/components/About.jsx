@@ -22,7 +22,7 @@ import pic12 from "./Pages/Images/About-Images/Surgical Gloves.jpg"
 import pic13 from "./Pages/Images/About-Images/Examination Gloves.jpg"
 import pic14 from "./Pages/Images/About-Images/Eye Mask.jpg"
 
-import man from "./Pages/Images/Testimonials-Photos/man.jpg"
+import man from "./Pages/Images/Testimonials-Photos/client1.jpg"
 import man2 from "./Pages/Images/Testimonials-Photos/man2.jpg"
 import girl from "./Pages/Images/Testimonials-Photos/girls.webp"
 import girl2 from "./Pages/Images/Testimonials-Photos/girls2.jpg"
@@ -32,8 +32,8 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 
 const testimonials = [
     {
-        name: "Dr. Aakash Verma",
-        role: "Orthopedic Surgeon",
+        name: "S M Moniruzzaman Monir",
+        role: "From: Transmit Technology Bangladesh",
         date: "Jan 15, 2023",
         text: "The quality of medical devices we received has been outstanding. The orthopaedic casts and bandages are durable, patient-friendly, and meet international standards. I can confidently recommend their products to other healthcare professionals.",
         img: man,
@@ -248,7 +248,7 @@ function About() {
                         <img
                             src={testimonials[current].img}
                             alt={testimonials[current].name}
-                            className="w-28 h-28 rounded-full object-cover border-4 border-blue-200"
+                            className="w-[10rem] h-[10rem] rounded-[50%] object-cover border-4 border-blue-200"
                         />
                         <div className="text-left">
                             <h3 className="text-xl font-semibold text-gray-800">

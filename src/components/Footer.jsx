@@ -18,7 +18,7 @@ function Footer() {
                         <p className="mt-4 text-sm leading-relaxed">
                             A trusted global partner in <span className="hover:text-yellow-500">export–import</span>, delivering
                             high-quality medical devices, IT solutions, organic green tea, bamboo crafts, jaggery,
-                            and industrial raw materials like copper &amp; aluminium scrap.
+                            {/* and industrial raw materials like copper &amp; aluminium scrap. */}
                         </p>
                         <ul className="mt-4 space-y-2 text-sm">
                             <li className="flex items-center gap-2 hover:text-yellow-500 transition">
@@ -78,13 +78,13 @@ function Footer() {
                             <a href="https://www.facebook.com/profile.php?id=100064560615109&mibextid=ZbWKwL" className="bg-yellow-[#B88E2F] p-2 rounded-full hover:text-yellow-500 transition">
                                 <i className="fab fa-facebook-f" />
                             </a>
-                            <a href="#" className="bg-yellow-[#B88E2F] p-2 rounded-full hover:text-yellow-500 transition">
+                            <a href="https://www.linkedin.com/in/swastik-international-17610338b/" className="bg-yellow-[#B88E2F] p-2 rounded-full hover:text-yellow-500 transition">
                                 <i className="fab fa-linkedin-in" />
                             </a>
-                            <a href="#" className="bg-yellow-[#B88E2F] p-2 rounded-full hover:text-yellow-500 transition">
+                            <a href="https://www.instagram.com/swastik_intl17/" className="bg-yellow-[#B88E2F] p-2 rounded-full hover:text-yellow-500 transition">
                                 <i className="fab fa-instagram" />
                             </a>
-                            <a href="#" className="bg-yellow-[#B88E2F] p-2 rounded-full hover:text-yellow-500 transition">
+                            <a href="https://x.com/swastikintl17" className="bg-yellow-[#B88E2F] p-2 rounded-full hover:text-yellow-500 transition">
                                 <i className="fab fa-twitter" />
                             </a>
                         </div>

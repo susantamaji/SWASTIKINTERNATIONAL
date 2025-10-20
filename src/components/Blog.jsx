@@ -40,7 +40,7 @@ function Blog() {
               Insights on <span className="text-cyan-500 font-bold">Global Trade</span> – from
               <br /> medical devices &amp; IT consulting to
               <span className="text-cyan-500 font-bold">organic green tea</span>, bamboo,
-              jaggery, and industrial metals.
+              jaggery.
             </p>
           </div>
         </div>
@@ -108,13 +108,13 @@ function Blog() {
                 </div>
               </div>
               {/* Card 2 */}
-              <div className="bg-white shadow rounded-md overflow-hidden">
+              {/* <div className="bg-white shadow rounded-md overflow-hidden">
                 <img src={pic4} alt="Related Post" className="w-full h-62 object-cover" />
                 <div className="p-4">
                   <h3 className="text-lg font-semibold">The Growing Demand for Copper &amp; Aluminium Scrap</h3>
                   <p className="text-sm text-gray-500">Posted on 20 February 2025 by Swastik Team</p>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
           {/* COMMENTS SECTION */}
@@ -202,7 +202,7 @@ function Blog() {
               <li className="px-4 py-3 hover:bg-cyan-500 hover:text-white flex justify-between">IT Consulting <i data-lucide="chevron-right" /></li>
               <li className="px-4 py-3 hover:bg-cyan-500 hover:text-white flex justify-between">Agro Products <i data-lucide="chevron-right" /></li>
               <li className="px-4 py-3 hover:bg-cyan-500 hover:text-white flex justify-between">Bamboo &amp; Organic Goods <i data-lucide="chevron-right" /></li>
-              <li className="px-4 py-3 hover:bg-cyan-500 hover:text-white flex justify-between">Metal Scrap Exports <i data-lucide="chevron-right" /></li>
+              {/* <li className="px-4 py-3 hover:bg-cyan-500 hover:text-white flex justify-between">Metal Scrap Exports <i data-lucide="chevron-right" /></li> */}
             </ul>
           </div>
           {/* Latest Posts */}

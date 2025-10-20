@@ -58,13 +58,13 @@ function Services() {
             short: "Delivering natural, chemical-free jaggery products that preserve traditional Indian taste and health values.",
             more: "We offer jaggery blocks, powder, and liquid jaggery—perfect for sweetening without refined sugar, rich in minerals and iron."
         },
-        {
-            id: 6,
-            img: pic6,
-            title: "Copper & Aluminium Scrap",
-            short: "Exporting high-grade copper and aluminium scrap materials for industrial use across international markets.",
-            more: "Our scrap is carefully sorted and processed to meet export quality standards, ensuring reliable supply for industries."
-        }
+        // {
+        //     id: 6,
+        //     img: pic6,
+        //     title: "Copper & Aluminium Scrap",
+        //     short: "Exporting high-grade copper and aluminium scrap materials for industrial use across international markets.",
+        //     more: "Our scrap is carefully sorted and processed to meet export quality standards, ensuring reliable supply for industries."
+        // }
     ];
     return (
         <div className='pt-20'>
@@ -108,7 +108,7 @@ function Services() {
                     <div className="container mx-auto px-20 grid gap-8 md:grid-cols-3 p-4">
                         {cards.map((card) => (
                             <div key={card.id} className="bg-white shadow-md rounded-md overflow-hidden relative">
-                                <img src={card.img} alt={card.title} className="w-full h-56 object-cover" />
+                                <img src={card.img} alt={card.title} className="w-full h-68 object-cover" />
                                 <div className="p-6">
                                     <h3 className="text-2xl font-semibold text-[#b37f08]">{card.title}</h3>
                                     <p className="text-gray-600 mt-2">
@@ -120,9 +120,9 @@ function Services() {
                                         <p className="text-gray-700 mt-2">{card.more}</p>
                                     )}
 
-                                    <button
+                                    <button 
                                         onClick={() => setOpenCard(openCard === card.id ? null : card.id)}
-                                        className="mt-4 inline-block text-cyan-600 font-semibold"
+                                        className="mt-4 inline-block text-cyan-600 font-semibold cursor-pointer"
                                     >
                                         {openCard === card.id ? "SHOW LESS ←" : "READ MORE →"}
                                     </button>
