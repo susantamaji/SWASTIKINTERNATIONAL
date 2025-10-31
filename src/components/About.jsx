@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import Navbar from './Navbar'
 import Footer from './Footer'
-import pic from "./Pages/Images/indexPhoto/3rd.jpg"
+import pic from "./Pages/Images/indexPhoto/1st.jpg"
 import { NavLink } from 'react-router-dom'
 import { FaPlay } from "react-icons/fa";
 import { Play } from "lucide-react";
@@ -28,6 +28,9 @@ import girl from "./Pages/Images/Testimonials-Photos/girls.webp"
 import girl2 from "./Pages/Images/Testimonials-Photos/girls2.jpg"
 import pic111 from "./Pages/Images/About-Images/banner5.png"
 import { ChevronLeft, ChevronRight } from "lucide-react";
+// import pic122 from "./Pages/Images/indexPhoto/Gemini_Generated_Image_key6qgkey6qgkey6.png";
+// import pic122 from "./Pages/Images/indexPhoto/it banner.png";
+import pic122 from "./Pages/Images/indexPhoto/gurrrrrr.png";
 
 
 const testimonials = [
@@ -80,11 +83,11 @@ function About() {
                 <section className="relative bg-gray-900 text-white">
                     {/* Background Image */}
                     <div className="absolute inset-0">
-                        <img src={pic} alt="Ship Export" className="w-full h-full object-cover opacity-80" />
+                        <img src={pic122} alt="Ship Export" className="w-full h-full object-cover opacity-80" />
                         <div className="absolute inset-0 bg-black/50" />
                     </div>
                     {/* Content */}
-                    <div className="relative max-w-7xl mx-auto px-6 py-20 text-center md:text-left">
+                    <div className="relative max-w-7xl  px-6 py-20 text-center md:text-left">
                         <h1 className="text-4xl md:text-5xl font-bold mb-4 hover:text-cyan-500 transition duration-300">ABOUT US</h1>
                         <p className="text-lg md:text-xl max-w-2xl mx-auto md:mx-0">
                             We freight to all over the world The best logistic company,
@@ -102,10 +105,10 @@ function About() {
                 <section className="py-12 px-6 md:px-16 lg:px-24 text-center">
                     <h2 className="text-3xl font-extrabold text-gray-900 mb-6 transition">ABOUT US</h2>
                     <p className="text-gray-600 max-w-4xl mx-auto leading-relaxed">
-                        Swastik International is a renowned export firm specializing in
-                        <span className="font-semibold text-gray-800 hover:text-cyan-500 transition">
+                        Swastik International is a renowned export firm specializing in 
+                        <span className="font-semibold text-gray-800 hover:text-cyan-500 transition">{" "}
                             Medical Devices, Laboratory Chemicals, Laboratory Equipment, Generic Medicines
-                        </span>
+                        </span>{" "}
                         and Disposable Items. We are committed to facilitating global trade by delivering top-quality products and services to international markets. With a strong focus on customer satisfaction and strict adherence to international standards, we have consistently remained a preferred partner for businesses aiming to expand their global presence.
                     </p>
 

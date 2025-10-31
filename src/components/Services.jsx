@@ -13,7 +13,7 @@ import pic7 from "./Pages/Images/Services-Photos/gursm.jpg"
 import pic8 from "./Pages/Images/Services-Photos/gurssm.jpg"
 import pic9 from "./Pages/Images/Services-Photos/greenTea.jpg"
 import pic10 from "./Pages/Images/Services-Photos/bambooTea2.jpg"
-
+import pic122 from "./Pages/Images/indexPhoto/Gemini_Generated_Image_key6qgkey6qgkey6.png";
 
 
 function Services() {
@@ -70,7 +70,7 @@ function Services() {
         <div className='pt-20'>
 
             <div>
-                <section className="relative bg-cover bg-center h-[400px] flex items-center justify-center" style={{ backgroundImage: `url(${pic})` }}>
+                <section className="relative bg-cover bg-center h-[400px] flex items-center justify-center" style={{ backgroundImage: `url(${pic122})` }}>
                     {/* Overlay */}
                     <div className="absolute inset-0 bg-black/70 " />
                     {/* Content */}

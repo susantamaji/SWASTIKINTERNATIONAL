@@ -14,14 +14,14 @@ import pic8 from "./Pages/Images/Blog-images/medical.jpg"
 import pic9 from "./Pages/Images/Blog-images/laptop.jpg"
 import pic10 from "./Pages/Images/Blog-images/OrganicJaggery.jpg"
 import pic11 from "./Pages/Images/Blog-images/Sustainability.jpg"
-
+import pic122 from "./Pages/Images/indexPhoto/it banner.png";
 import myproducts from "./Pages/Images/indexPhoto/1st.jpg"
 
 function Blog() {
   return (
     <div className='pt-20'>
 
-      <section className="relative bg-cover bg-center h-[400px] flex items-center justify-center" style={{ backgroundImage: `url(${pic})` }}>
+      <section className="relative bg-cover bg-center h-[400px] flex items-center justify-center" style={{ backgroundImage: `url(${pic122})` }}>
         {/* Overlay */}
         <div className="absolute inset-0 bg-black/70" />
         {/* Content */}
@@ -39,13 +39,12 @@ function Blog() {
             <p className="text-lg font-medium">
               Insights on <span className="text-cyan-500 font-bold">Global Trade</span> – from
               <br /> medical devices &amp; IT consulting to
-              <span className="text-cyan-500 font-bold">organic green tea</span>, bamboo,
+              <span className="text-cyan-500 font-bold"> organic green tea</span>, bamboo,
               jaggery.
             </p>
           </div>
         </div>
       </section>
-
 
       <div className="container mx-auto px-4 py-8 grid grid-cols-1 md:grid-cols-3 gap-6">
         {/* LEFT SIDE */}
@@ -82,9 +81,9 @@ function Blog() {
             {/* Bullet List */}
             <ul className="list-disc list-inside text-gray-700 space-y-2 mb-4">
               <li>Trusted sourcing of <strong>Medical Devices</strong></li>
+              <li>Reliable <strong>IT Consulting Services</strong></li>
               <li>Global exports of <strong>Organic Agro Products</strong></li>
               <li>Supplying <strong>Copper &amp; Aluminium Scrap</strong></li>
-              <li>Reliable <strong>IT Consulting Services</strong></li>
             </ul>
             <p className="text-gray-700">
               With Swastik International, businesses across the globe access authentic, high-quality Indian products with

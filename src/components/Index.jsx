@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
-import pic1 from "./Pages/Images/indexPhoto/1st.jpg";
-import pic2 from "./Pages/Images/indexPhoto/2nd.jpg";
-import pic3 from "./Pages/Images/indexPhoto/3rd.jpg";
+import pic1 from "./Pages/Images/indexPhoto/Gemini_Generated_Image_key6qgkey6qgkey6.png";
+import pic2 from "./Pages/Images/indexPhoto/it banner.png";
+import pic3 from "./Pages/Images/indexPhoto/gurrrrrr.png";
 import pic4 from "./Pages/Images/indexPhoto/medical.jpeg"
 import pic5 from "./Pages/Images/indexPhoto/it.jpg"
 import pic6 from "./Pages/Images/indexPhoto/tea.jpg"
@@ -72,7 +72,7 @@ function Index() {
                         <span className="font-semibold">Medical Devices</span>,{" "}
                         <span className="font-semibold">Software &amp; IT Consulting</span>,{" "}
                         <span className="font-semibold">Arunachal Green Tea</span>,{" "}
-                        <span className="font-semibold">Bamboo Smoking Jaguar</span>,{" "}
+                        <span className="font-semibold">Bamboo Smoked Tea</span>,{" "}
                         <span className="font-semibold">Organic Gur (Jaggery)</span>, and{" "}
                         <span className="font-semibold">Copper &amp; Aluminium Scrap</span>.
                     </p>

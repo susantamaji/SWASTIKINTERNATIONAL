@@ -1,6 +1,6 @@
 import React from 'react'
 import Footer from './Footer'
-
+import pic122 from "./Pages/Images/indexPhoto/gurrrrrr.png";
 import pic from "./Pages/Images/indexPhoto/3rd.jpg"
 import pichand from "./Pages/Images/Contact-Photos/group.jpeg"
 import { NavLink } from 'react-router-dom'
@@ -9,7 +9,7 @@ function Contact() {
   return (
     <div className='pt-20'>
 
-      <section className="relative bg-cover bg-center h-[400px] flex items-center justify-center" style={{ backgroundImage: `url(${pic})` }}>
+      <section className="relative bg-cover bg-center h-[400px] flex items-center justify-center" style={{ backgroundImage: `url(${pic122})` }}>
         {/* Overlay */}
         <div className="absolute inset-0 bg-black/60" />
         {/* Content */}
@@ -26,14 +26,14 @@ function Contact() {
           <div className="mt-4 md:mt-0 text-center md:text-right max-w-lg">
             <p className="text-lg font-medium leading-relaxed">
               Swastik International Exports connects the world with<br />
-              <span className="text-cyan-500 font-bold">Bamboo Smoke Tea</span>,
-              <span className="text-cyan-500 font-bold">Medical Devices</span>,
-              <span className="text-cyan-500 font-bold">IT Solutions</span>,<br />
-              <span className="text-cyan-500 font-bold">Arunachal Green Tea</span>,
-              <span className="text-cyan-500 font-bold">Organic Jaggery</span>, and
+              <span className="text-cyan-200 font-bold">Bamboo Smoke Tea</span>,
+              <span className="text-cyan-200 font-bold">Medical Devices</span>,
+              <span className="text-cyan-200 font-bold">IT Solutions</span>,<br />
+              <span className="text-cyan-200 font-bold">Arunachal Green Tea</span>,
+              <span className="text-cyan-200 font-bold">Organic Jaggery</span>, and
               {/* <span className="text-cyan-500 font-bold">Metal Scrap</span><br /> */}
               — delivered with <span className="text-cyan-500 font-bold">speed</span> and
-              <span className="text-cyan-500 font-bold">trust</span>.
+              <span className="text-cyan-500 font-bold"> trust</span>.
             </p>
           </div>
         </div>
@@ -100,8 +100,8 @@ function Contact() {
         </div>
       </section>
 
-{/* map section------------- */}
-<iframe className="w-full mt-5" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27161.729981662887!2d88.30754700249197!3d22.61847523534856!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a0277e01d381e59%3A0x50a001ffa49111f8!2sLiluah%2C%20Howrah%2C%20West%20Bengal!5e1!3m2!1sen!2sin!4v1757453393599!5m2!1sen!2sin" width={600} height={450} style={{border: 0}} allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade" />
+      {/* map section------------- */}
+      <iframe className="w-full mt-5" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27161.729981662887!2d88.30754700249197!3d22.61847523534856!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a0277e01d381e59%3A0x50a001ffa49111f8!2sLiluah%2C%20Howrah%2C%20West%20Bengal!5e1!3m2!1sen!2sin!4v1757453393599!5m2!1sen!2sin" width={600} height={450} style={{ border: 0 }} allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade" />
 
 
       <Footer />
