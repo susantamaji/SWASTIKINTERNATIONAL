@@ -2,22 +2,22 @@ import React, { useState } from 'react'
 import Footer from './Footer'
 import pic from "./Pages/Images/indexPhoto/1st.jpg"
 
-import pic1 from "./Pages/Images/Blog-images/medical-equipment-1000x1000.png"
+import pic1 from "./Pages/Images/About-Images/all2.png"
 import pic2 from "./Pages/Images/Services-Photos/it2.png"
 import pic3 from "./Pages/Images/Services-Photos/tea2.webp"
 import pic4 from "./Pages/Images/Services-Photos/bambooss.jpg"
 import pic5 from "./Pages/Images/Services-Photos/gur3.jpg"
 import pic6 from "./Pages/Images/Services-Photos/copperr.jpg"
 
-import pic7 from "./Pages/Images/Services-Photos/gursm.jpg"
-import pic8 from "./Pages/Images/Services-Photos/gurssm.jpg"
+import pic7 from "./Pages/Images/About-Images/powder.jpg"
+import pic8 from "./Pages/Images/Services-Photos/gursm.jpg"
 import pic9 from "./Pages/Images/Services-Photos/greenTea.jpg"
 import pic10 from "./Pages/Images/Services-Photos/bambooTea2.jpg"
-import pic122 from "./Pages/Images/indexPhoto/Gemini_Generated_Image_key6qgkey6qgkey6.png";
+import pic122 from "./Pages/Images/indexPhoto/gemini.png";
+import { NavLink } from 'react-router-dom'
 
 
 function Services() {
-
     // Track which card is open
     const [openCard, setOpenCard] = useState(null);
 
@@ -27,8 +27,8 @@ function Services() {
             id: 1,
             img: pic1,
             title: "Medical Devices Export",
-            short: "Supplying high-quality and certified medical equipment, instruments, and healthcare solutions to global markets with trust and reliability.",
-            more: "We ensure all devices comply with international safety standards. Our portfolio includes diagnostic tools, surgical instruments, and hospital supplies."
+            short: "Supplying high-quality and certified medical Devices, and healthcare solutions to global markets with trust and reliability.",
+            more: "We ensure all devices comply with international safety standards. Our portfolio includes diagnostic tools, and hospital supplies."
         },
         {
             id: 2,
@@ -47,16 +47,17 @@ function Services() {
         {
             id: 4,
             img: pic4,
-            title: "Bamboo Smoke Tea",
-            short: "Supplying eco-friendly bamboo-based products including smoking jaguar and handicrafts, supporting sustainable lifestyles.",
-            more: "Our bamboo products are sourced responsibly and crafted to preserve tradition while promoting green living."
+            title: "Bamboo Smoked Tea",
+            short: "Supplying eco-friendly bamboo-based products, including smoked jaggery, to support sustainable lifestyles.",
+            more: "Our bamboo products are responsibly sourced and crafted to preserve traditional methods while promoting a greener, healthier way of living."
+
         },
         {
             id: 5,
             img: pic5,
             title: "Organic Jaggery (Gur)",
             short: "Delivering natural, chemical-free jaggery products that preserve traditional Indian taste and health values.",
-            more: "We offer jaggery blocks, powder, and liquid jaggery—perfect for sweetening without refined sugar, rich in minerals and iron."
+            more: "We offer jaggery Qube, powder , and jaggery—perfect for sweetening without refined sugar, rich in minerals and iron."
         },
         // {
         //     id: 6,
@@ -79,18 +80,19 @@ function Services() {
                         <div>
                             <h2 className="text-3xl font-bold">OUR SERVICES</h2>
                             <p className="mt-2">
-                                <a href="./index.html"><span className="text-cyan-500 font-semibold cursor-pointer">Home</span></a>
-                                <a href="./service.html"><span className="text-gray-300 cursor-pointer"> / Our Services</span></a>
+                                <NavLink to={"/"}> <a><span className="text-cyan-500 font-semibold cursor-pointer">Home</span></a></NavLink>
+                                < NavLink to={"/blog"}> <a href="./blog"><span className="text-gray-300 cursor-pointer"> / Our Blog</span></a></NavLink>
                             </p>
                         </div>
                         {/* Right Text */}
                         <div className="mt-4 md:mt-0 text-center md:text-right max-w-lg">
                             <p className="text-lg font-medium">
-                                We freight to all over the world The best logistic <br />company,
-                                <span className="text-cyan-500 font-bold">FAST</span>
-                                and <span className="text-cyan-500 font-bold">SAFELY!</span>
+                                Insights on <span className="text-cyan-500 font-bold">Global Trade</span> –
+                                <br /> medical devices , &amp; IT consulting ,
+                                <span className="text-cyan-500 font-bold">Arunachal Pradesh Green Tea</span>, Bamboo smoked tea and Organic Jaggery”
                             </p>
                         </div>
+
                     </div>
                 </section>
                 {/* our Services */}
@@ -98,8 +100,7 @@ function Services() {
                     <div className="text-center mb-12">
                         <h2 className="text-3xl font-bold text-gray-800">OUR SERVICES</h2>
                         <p className="text-gray-500 mt-2 px-20">
-                            Swastik International is a renowned export firm for Medical Devices, Laboratory Chemical,
-                            Laboratory Equipment, Generic Medicine and Disposable Items committed to facilitating
+                            Swastik International is a renowned export firm for Medical Devices,IT Services,Arunachal Pradesh Green Tea,Bamboo Smoked Tea and Organic Jaggery committed to facilitating
                             global trade by delivering top-quality products and services to international markets. With a
                             strong focus on customer satisfaction and adherence to international standards, we have
                             consistently been a preferred partner for businesses seeking to expand their global reach.
@@ -120,7 +121,7 @@ function Services() {
                                         <p className="text-gray-700 mt-2">{card.more}</p>
                                     )}
 
-                                    <button 
+                                    <button
                                         onClick={() => setOpenCard(openCard === card.id ? null : card.id)}
                                         className="mt-4 inline-block text-cyan-600 font-semibold cursor-pointer"
                                     >
@@ -134,7 +135,7 @@ function Services() {
                                         className="absolute text-white text-2xl font-bold"
                                         style={{ top: "70%", left: "70%", transform: "translate(-50%, -50%)" }}
                                     >
-                                        +
+
                                     </span>
                                 </div>
                             </div>
@@ -150,7 +151,7 @@ function Services() {
                     <div className="bg-white rounded-lg shadow-lg overflow-hidden">
                         {/* Header */}
                         <div className="bg-cyan-700 text-white text-center py-4">
-                            <h2 className="text-2xl font-bold">Shuddh Gur</h2>
+                            <h2 className="text-2xl font-bold">Organic Teas & Jaggery</h2>
                             <p className="text-sm">100% Natural & Organic Jaggery from India</p>
                         </div>
 
@@ -170,17 +171,12 @@ function Services() {
                                 <h3 className="text-lg font-semibold text-gray-800 mb-3">Exporter of:</h3>
                                 <ul className="space-y-2 text-gray-700">
                                     <li className="flex items-center gap-2">
-                                        <i className="fas fa-check-circle text-green-600" /> Jaggery Blocks (1kg, 5kg, 10kg packs)
+                                        <i className="fas fa-check-circle text-green-600" /> Jaggery Qube
                                     </li>
                                     <li className="flex items-center gap-2">
-                                        <i className="fas fa-check-circle text-green-600" /> Jaggery Powder (500g, 1kg packs)
+                                        <i className="fas fa-check-circle text-green-600" /> Jaggery Powder
                                     </li>
-                                    <li className="flex items-center gap-2">
-                                        <i className="fas fa-check-circle text-green-600" /> Liquid Jaggery (traditional recipe)
-                                    </li>
-                                    <li className="flex items-center gap-2">
-                                        <i className="fas fa-check-circle text-green-600" /> Flavored Jaggery (ginger, sesame, turmeric blends)
-                                    </li>
+
                                 </ul>
                             </div>
 
@@ -192,7 +188,7 @@ function Services() {
                                         <i className="fas fa-utensils text-amber-600" /> Natural sweetener in food & beverages
                                     </li>
                                     <li className="flex items-center gap-2">
-                                        <i className="fas fa-leaf text-green-600" /> Health & Ayurveda remedies
+                                        <i className="fas fa-leaf text-green-600" /> Health & Ayurvedic remedies
                                     </li>
                                     <li className="flex items-center gap-2">
                                         <i className="fas fa-candy-cane text-pink-500" /> Confectionery & traditional sweets
@@ -249,7 +245,7 @@ function Services() {
                         {/* Header */}
                         <div className="bg-cyan-700 text-white text-center py-4">
                             <h2 className="text-2xl font-bold">Arunachal Pradesh Tea Treasures</h2>
-                            <p className="text-sm">Premium Green Tea &amp; Bamboo Smoke Tea</p>
+                            <p className="text-sm">Premium Green Tea &amp; Bamboo Smoked Tea</p>
                         </div>
                         {/* Content */}
                         <div className="p-6 space-y-6">
@@ -312,7 +308,7 @@ function Services() {
                                 <p className="text-green-700 font-semibold">Export Ready – Supplying globally with certifications</p>
                                 <div className="mt-4 space-y-2">
                                     <p className="flex items-center justify-center gap-2"><i className="fab fa-whatsapp text-green-600" /> WhatsApp:
-                                        +91 9831161331</p>
+                                        +91 8240690052</p>
                                     <p className="flex items-center justify-center gap-2"><i className="fas fa-envelope text-cyan-600" /> <a href="mailto:info@swastikintl.com" className="hover:underline">info@swastikintl.com</a></p>
                                 </div>
                             </div>

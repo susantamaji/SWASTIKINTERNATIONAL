@@ -15,7 +15,8 @@ import pic9 from "./Pages/Images/Blog-images/laptop.jpg"
 import pic10 from "./Pages/Images/Blog-images/OrganicJaggery.jpg"
 import pic11 from "./Pages/Images/Blog-images/Sustainability.jpg"
 import pic122 from "./Pages/Images/indexPhoto/it banner.png";
-import myproducts from "./Pages/Images/indexPhoto/1st.jpg"
+import myproducts from "./Pages/Images/About-Images/ban.png"
+import { NavLink } from 'react-router-dom'
 
 function Blog() {
   return (
@@ -38,9 +39,9 @@ function Blog() {
           <div className="mt-4 md:mt-0 text-center md:text-right max-w-lg">
             <p className="text-lg font-medium">
               Insights on <span className="text-cyan-500 font-bold">Global Trade</span> – from
-              <br /> medical devices &amp; IT consulting to
-              <span className="text-cyan-500 font-bold"> organic green tea</span>, bamboo,
-              jaggery.
+              <br /> medical devices &amp; IT consulting , 
+              <span className="text-cyan-500 font-bold"> Arunachal Pradesh green tea</span>, Bamboo Smoked Tea,
+              Organic Teas & Jaggery.
             </p>
           </div>
         </div>
@@ -57,12 +58,12 @@ function Blog() {
               Posted on 8 March 2025 by <span className="font-medium">Swastik Team</span>
             </p>
             {/* Meta Info */}
-            <div className="flex items-center flex-wrap gap-4 text-gray-500 text-sm mb-4">
+            {/* <div className="flex items-center flex-wrap gap-4 text-gray-500 text-sm mb-4">
               <span><i className="fa fa-eye" /> 150 Views</span>
               <span><i className="fa fa-comments" /> 18 Comments</span>
               <span><i className="fa fa-share-alt" /> 42 Shares</span>
-              <span><i className="fa fa-tags" /> Medical Devices, Agro, Metals</span>
-            </div>
+              <span><i className="fa fa-tags" /> Medical Devices,</span>
+            </div> */}
             {/* Blog Paragraphs */}
             <p className="text-gray-700 mb-4">
               India’s export industry is rapidly expanding, with products like medical devices, organic food items, and IT
@@ -70,8 +71,8 @@ function Blog() {
               Indian innovation and agriculture with the world.
             </p>
             <p className="text-gray-700 mb-4">
-              From cutting-edge <strong>IT consulting</strong> to traditional <strong>Arunachal green tea</strong> and
-              <strong>organic jaggery</strong>, we provide quality products that meet international standards and customer
+              From cutting-edge <strong>IT consulting</strong> to traditional <strong>Arunachal Pradesh green tea</strong> and 
+              <strong> organic jaggery</strong>, we provide quality products that meet international standards and customer
               satisfaction.
             </p>
             <p className="text-gray-700 mb-4">
@@ -82,8 +83,8 @@ function Blog() {
             <ul className="list-disc list-inside text-gray-700 space-y-2 mb-4">
               <li>Trusted sourcing of <strong>Medical Devices</strong></li>
               <li>Reliable <strong>IT Consulting Services</strong></li>
-              <li>Global exports of <strong>Organic Agro Products</strong></li>
-              <li>Supplying <strong>Copper &amp; Aluminium Scrap</strong></li>
+              <li>Global exports of <strong>Organic & Natural Products</strong></li>
+              {/* <li>Supplying <strong>Copper &amp; Aluminium Scrap</strong></li> */}
             </ul>
             <p className="text-gray-700">
               With Swastik International, businesses across the globe access authentic, high-quality Indian products with
@@ -161,9 +162,7 @@ function Blog() {
                   <h4 className="text-cyan-600 font-semibold">Mei Wong</h4>
                   <span className="text-sm text-gray-500">3rd March 2025 at 11:00 am</span>
                 </div>
-                <p className="text-gray-700 mt-2">
-                  Copper scrap exports from India are reliable and sustainable. Keep up the great work!
-                </p>
+                
                 <button className="text-cyan-600 text-sm mt-2">REPLY</button>
               </div>
             </div>
@@ -197,10 +196,10 @@ function Blog() {
           <div className="bg-white shadow-md">
             <h3 className="bg-cyan-600 text-white px-4 py-2 font-bold">CATEGORIES</h3>
             <ul className="divide-y">
-              <li className="px-4 py-3 hover:bg-cyan-500 hover:text-white flex justify-between">Medical Devices <i data-lucide="chevron-right" /></li>
-              <li className="px-4 py-3 hover:bg-cyan-500 hover:text-white flex justify-between">IT Consulting <i data-lucide="chevron-right" /></li>
-              <li className="px-4 py-3 hover:bg-cyan-500 hover:text-white flex justify-between">Agro Products <i data-lucide="chevron-right" /></li>
-              <li className="px-4 py-3 hover:bg-cyan-500 hover:text-white flex justify-between">Bamboo &amp; Organic Goods <i data-lucide="chevron-right" /></li>
+             <NavLink to={"/services"}> <li className="px-4 py-3 hover:bg-cyan-500 hover:text-white flex justify-between">Medical Devices <i data-lucide="chevron-right" /></li></NavLink>
+             <NavLink to={"/services"}> <li className="px-4 py-3 hover:bg-cyan-500 hover:text-white flex justify-between">IT Consulting <i data-lucide="chevron-right" /></li></NavLink>
+             <NavLink to={"/services"}> <li className="px-4 py-3 hover:bg-cyan-500 hover:text-white flex justify-between">Arunachal Pradesh Green Tea <i data-lucide="chevron-right" /></li></NavLink>
+             <NavLink to={"/services"}> <li className="px-4 py-3 hover:bg-cyan-500 hover:text-white flex justify-between">Organic Jaggery <i data-lucide="chevron-right" /></li></NavLink>
               {/* <li className="px-4 py-3 hover:bg-cyan-500 hover:text-white flex justify-between">Metal Scrap Exports <i data-lucide="chevron-right" /></li> */}
             </ul>
           </div>
@@ -229,13 +228,7 @@ function Blog() {
                   <span className="text-xs text-gray-500">20th February 2025</span>
                 </div>
               </li>
-              <li className="flex items-center gap-3 p-3">
-                <img src={pic11} className="w-20 h-14 object-cover" />
-                <div>
-                  <p className="text-sm text-gray-700">Copper Scrap: India’s Key to Global Sustainability</p>
-                  <span className="text-xs text-gray-500">15th February 2025</span>
-                </div>
-              </li>
+             
             </ul>
           </div>
           {/* Tags */}
@@ -258,8 +251,7 @@ function Blog() {
                 Products</span>
               <span className="bg-gray-100 px-4 py-2 text-sm font-bold text-gray-800 rounded hover:bg-cyan-500 hover:text-white">Organic
                 Gur</span>
-              <span className="bg-gray-100 px-4 py-2 text-sm font-bold text-gray-800 rounded hover:bg-cyan-500 hover:text-white">Metal
-                Scrap</span>
+             
             </div>
           </div>
         </aside>

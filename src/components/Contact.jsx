@@ -1,6 +1,6 @@
 import React from 'react'
 import Footer from './Footer'
-import pic122 from "./Pages/Images/indexPhoto/gurrrrrr.png";
+import pic122 from "./Pages/Images/indexPhoto/gurrrrr.png";
 import pic from "./Pages/Images/indexPhoto/3rd.jpg"
 import pichand from "./Pages/Images/Contact-Photos/group.jpeg"
 import { NavLink } from 'react-router-dom'
@@ -25,8 +25,8 @@ function Contact() {
           {/* Right Text */}
           <div className="mt-4 md:mt-0 text-center md:text-right max-w-lg">
             <p className="text-lg font-medium leading-relaxed">
-              Swastik International Exports connects the world with<br />
-              <span className="text-cyan-200 font-bold">Bamboo Smoke Tea</span>,
+              Swastik International <br />
+              <span className="text-cyan-200 font-bold">Bamboo Smoked Tea</span>,
               <span className="text-cyan-200 font-bold">Medical Devices</span>,
               <span className="text-cyan-200 font-bold">IT Solutions</span>,<br />
               <span className="text-cyan-200 font-bold">Arunachal Green Tea</span>,
@@ -72,8 +72,9 @@ function Contact() {
               <div className="flex items-start gap-3">
                 <span className="text-cyan-600 text-xl">📍</span>
                 <p><strong>Address:</strong><br />
-                  Swastik International Exports,<br />
-                  184, Mahesh Colony, Serampore, <br /> Hooghly, Pin - 712 202, W.B. India
+                  Swastik International <br />
+                  3/3, AGRASAIN STREET,LILUAH,
+                  HOWRAH  <br /> Pin - 711204, W.B. India
                 </p>
               </div>
               {/* Phone */}

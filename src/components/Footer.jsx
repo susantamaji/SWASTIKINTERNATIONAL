@@ -8,7 +8,7 @@ function Footer() {
         <div>
             {/* footer--------- */}
             <footer className="bg-[#e5e8f5] text-black py-12 font-extralight translate-y-10 transition-all duration-700 will-change-transform animate-on-scroll">
-                <div className="container font-semibold mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div className="container font-semibold mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8">
                     {/* Logo + Info */}
                     <div>
                         <h2 className="flex items-center text-[18px] font-bold text-[#B88E2F]" >
@@ -17,7 +17,7 @@ function Footer() {
                         </h2>
                         <p className="mt-4 text-sm leading-relaxed">
                             A trusted global partner in <span className="hover:text-yellow-500">export–import</span>, delivering
-                            high-quality medical devices, IT solutions, organic green tea, bamboo crafts, jaggery,
+                            high-quality medical devices,IT solutions, Arunachal Pradesh Green Tea , Bamboo Smoked Tea , Organic & Natural Products,
                             {/* and industrial raw materials like copper &amp; aluminium scrap. */}
                         </p>
                         <ul className="mt-4 space-y-2 text-sm">
@@ -28,7 +28,8 @@ function Footer() {
                                 <i className="fas fa-envelope" /> info@swastikintl.com
                             </li>
                             <li className="flex items-center gap-2 hover:text-yellow-500 transition">
-                                <i className="fas fa-map-marker-alt" /> 184, Mahesh Colony, Serampore, Hooghly, Pin - 712 202,
+                                <i className="fas fa-map-marker-alt" /> 3/3, AGRASAIN STREET,LILUAH ,HOWRAH - 711204
+,
                                 W.B. India
                             </li>
                         </ul>
@@ -41,25 +42,25 @@ function Footer() {
                         <ul className="space-y-2 flex flex-col text-sm">
                             <NavLink to={"/about"}><a href="#" className="hover:text-yellow-500 transition">About Us</a></NavLink>
                             <NavLink to={"/products"}><a href="#" className="hover:text-yellow-500 transition">Our Products</a></NavLink>
-                            <NavLink to={"/products"}><a href="#" className="hover:text-yellow-500 transition">Medical Devices</a></NavLink>
-                            <NavLink to={"/products"}><a href="#" className="hover:text-yellow-500 transition">Agro Products</a></NavLink>
+                            <NavLink to={"/services"}><a href="#" className="hover:text-yellow-500 transition">Medical Devices</a></NavLink>
+                            {/* <NavLink to={"/products"}><a href="#" className="hover:text-yellow-500 transition">Agro Products</a></NavLink>
                             <NavLink to={"/products"}><a href="#" className="hover:text-yellow-500 transition">Industrial Supplies</a></NavLink>
-                            <NavLink to={"/products"}><a href="#" className="hover:text-yellow-500 transition">IT Consulting</a></NavLink>
+                            <NavLink to={"/products"}><a href="#" className="hover:text-yellow-500 transition">IT Consulting</a></NavLink> */}
                            <NavLink to={"/contact"}><a href="#" className="hover:text-yellow-500 transition">Contact Us</a></NavLink>
                         </ul>
                     </div>
                     {/* Useful Links */}
-                    <div>
+                    {/* <div>
                         <h3 className="text-yellow-[#B88E2F] font-semibold mb-4 border-b-2 border-yellow-600 inline-block">USEFUL LINKS</h3>
-                        <ul className="space-y-2 text-sm">
-                            <li><a href="#" className="hover:text-yellow-500 transition">Export Solutions</a></li>
+                        <ul className="space-y-2 text-sm"> */}
+                            {/* <li><a href="#" className="hover:text-yellow-500 transition">Export Solutions</a></li>
                             <li><a href="#" className="hover:text-yellow-500 transition">Import Services</a></li>
                             <li><a href="#" className="hover:text-yellow-500 transition">Quality Standards</a></li>
                             <li><a href="#" className="hover:text-yellow-500 transition">Certifications</a></li>
                             <li><a href="#" className="hover:text-yellow-500 transition">Client Testimonials</a></li>
-                            <li><a href="#" className="hover:text-yellow-500 transition">Business Enquiry</a></li>
-                        </ul>
-                    </div>
+                            <li><a href="#" className="hover:text-yellow-500 transition">Business Enquiry</a></li> */}
+                        {/* </ul>
+                    </div> */}
                     {/* Opening Hours */}
                     <div>
                         <h3 className="text-yellow-[#B88E2F] font-semibold mb-4 border-b-2 border-yellow-600 inline-block">BUSINESS HOURS

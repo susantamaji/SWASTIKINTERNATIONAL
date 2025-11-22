@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from "react";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
-import pic1 from "./Pages/Images/indexPhoto/Gemini_Generated_Image_key6qgkey6qgkey6.png";
+import pic1 from "./Images/logo.png";
 import pic2 from "./Pages/Images/indexPhoto/it banner.png";
-import pic3 from "./Pages/Images/indexPhoto/gurrrrrr.png";
-import pic4 from "./Pages/Images/indexPhoto/medical.jpeg"
-import pic5 from "./Pages/Images/indexPhoto/it.jpg"
-import pic6 from "./Pages/Images/indexPhoto/tea.jpg"
+import pic3 from "./Pages/Images/indexPhoto/gurrrrr.png";
+import pic4 from "./Pages/Images/About-Images/blood.jpg"
+import pic5 from "./Pages/Images/indexPhoto/it.png"
+import pic6 from "./Pages/Images/indexPhoto/teagurr.jpg"
 import pic7 from "./Pages/Images/indexPhoto/ship.jpeg"
 import pic8 from "./Pages/Images/indexPhoto/handshak.jpeg"
 import pic9 from "./Pages/Images/indexPhoto/form.jpeg"
@@ -73,8 +73,8 @@ function Index() {
                         <span className="font-semibold">Software &amp; IT Consulting</span>,{" "}
                         <span className="font-semibold">Arunachal Green Tea</span>,{" "}
                         <span className="font-semibold">Bamboo Smoked Tea</span>,{" "}
-                        <span className="font-semibold">Organic Gur (Jaggery)</span>, and{" "}
-                        <span className="font-semibold">Copper &amp; Aluminium Scrap</span>.
+                        <span className="font-semibold">Organic Gur (Jaggery)</span>
+                        {/* <span className="font-semibold">Copper &amp; Aluminium Scrap</span>. */}
                     </p>
                     <NavLink to={"/contact"}>
                         <a
@@ -117,15 +117,14 @@ function Index() {
                 <div className="text-center mb-12">
                     <h2 className="text-4xl font-bold uppercase text-[#094B72]">Our Services</h2>
                     <p className="text-gray-800 mt-2 text-2xl">
-                        We specialize in global trade of medical devices, IT consulting solutions, agro products, and industrial
-                        scrap.
+                        We specialize in global trade of medical devices, IT consulting solutions, Arunachal Green Tea , Bamboo Smoked Tea and Organic Jaggery.
                     </p>
                 </div>
                 {/* Cards Grid */}
                 <div className="grid gap-8 md:grid-cols-3">
                     {/* Card 1 */}
                     <div className="bg-[#F4F5F7] shadow-lg rounded-lg overflow-hidden hover:shadow-2xl transition transform hover:-translate-y-2">
-                        <img src={pic4} alt="Medical Devices" className="w-full h-48 object-cover" />
+                        <img src={pic4} alt="Medical Devices" className="w-full h-60 object-cover" />
                         <div className="p-6">
                             <h3 className="font-bold text-lg mb-2">Medical Devices</h3>
                             <p className="text-gray-900 mb-4">
@@ -135,7 +134,7 @@ function Index() {
                             {/* Show/Hide Text */}
                             {openCard === 1 && (
                                 <div className="text-gray-500 mb-4">
-                                    Our product range includes surgical instruments, hospital equipment, and healthcare devices sourced from trusted Indian manufacturers.
+                                    Our product range includes Medical Devices, Disposable Items sourced from trusted Indian manufacturers.
                                 </div>
                             )}
 
@@ -151,11 +150,11 @@ function Index() {
 
                     {/* Card 2 */}
                     <div className="bg-[#F4F5F7] shadow-lg rounded-lg overflow-hidden hover:shadow-2xl transition transform hover:-translate-y-2">
-                        <img src={pic5} alt="IT Consulting" className="w-full h-48 object-cover" />
+                        <img src={pic5} alt="IT Consulting" className="w-full h-60 object-fill" />
                         <div className="p-6">
                             <h3 className="font-bold text-lg mb-2">Software & IT Consulting</h3>
                             <p className="text-gray-900 mb-4">
-                                Providing world-class IT consulting and software export services for global clients.
+                                Providing Top-Notch IT consulting and software export services for global clients.
                             </p>
 
                             {openCard === 2 && (
@@ -176,16 +175,16 @@ function Index() {
 
                     {/* Card 3 */}
                     <div className="bg-[#F4F5F7] shadow-lg rounded-lg overflow-hidden hover:shadow-2xl transition transform hover:-translate-y-2">
-                        <img src={pic6} alt="Agro & Scrap Exports" className="w-full h-48 bg-cover" />
+                        <img src={pic6} alt="Agro & Scrap Exports" className="w-full h-60 bg-cover" />
                         <div className="p-6">
-                            <h3 className="font-bold text-lg mb-2">Agro & Scrap Exports</h3>
+                            <h3 className="font-bold text-lg mb-2">Organic & Natural Products</h3>
                             <p className="text-gray-900 mb-4">
-                                Supplying organic Arunachal green tea, bamboo smoking jaguar, organic jaggery, and industrial scrap worldwide.
+                                Supplying Arunachal Green Tea, Bamboo Smoked Tea, Organic Jaggery.
                             </p>
 
                             {openCard === 3 && (
                                 <div className="text-gray-500 mb-4">
-                                    We export premium agro products along with copper and aluminium scrap, serving industries and wholesalers across the globe.
+                                    We export premium along with , serving industries and wholesalers across the globe.
                                 </div>
                             )}
 
@@ -216,10 +215,10 @@ function Index() {
                         We Export &amp; Import
                     </p>
                     <h1 className="text-2xl md:text-5xl font-bold my-4">
-                        Trusted Partner for Medical Devices, IT Solutions &amp; Agro Products
+                        Trusted Partner for Medical Devices, IT Solutions , Organic & Natural Products
                     </h1>
                     <p className="text-lg md:text-xl text-white font-medium">
-                        Delivering Organic Green Tea, Bamboo Jaguar, Jaggery, and Metal Scrap worldwide
+                        Delivering Organic Green Tea, Bamboo Smoked Tea , Organic & Natural Products
                     </p>
                     <NavLink to={"/contact"}>
                     <a
@@ -249,10 +248,10 @@ function Index() {
                                 <p className="text-gray-600 mb-4">
                                     At <span className="font-semibold">Swastik International</span>, we are
                                     committed to connecting India’s finest products with global markets.
-                                    From{" "}
-                                    <span className="font-medium">medical devices and IT solutions</span> to{" "}
+                                    
+                                    <span className="font-medium">Medical Devices and IT solutions , </span>
                                     <span className="font-medium">
-                                        organic green tea, bamboo products, jaggery, and metal scrap
+                                        Arunachal Pradesh Green Tea , Bamboo Smoked Tea , Organic & Natural Products
                                     </span>
                                     , we ensure world-class quality and reliability.
                                 </p>
